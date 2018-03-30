@@ -7,6 +7,11 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
 
+    <ul>
+      <li><Link to="/page-2/">Go to page 2</Link></li>
+      <li><Link to="/page-3/">Go to page 3</Link></li>
+    </ul>
+
     <div>
       <h1>Richard Hamming on Luck</h1>
       <div>
@@ -29,9 +34,6 @@ const IndexPage = () => (
       </div>
       <p>Posted April 09, 2011</p>
     </div>
-
-
-    <Link to="/page-2/">Go to page 2</Link>
   </div>
 )
 
