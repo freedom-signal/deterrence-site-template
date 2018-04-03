@@ -1,0 +1,15 @@
+.header {
+  background: rebeccapurple;
+  margin: 0px auto 1.45rem;
+  padding: 1.45rem 1.0875rem;
+}
+
+.menuLink {
+  display: inline-block;
+  padding: .25rem;
+}
+
+.menuLink a {
+  color: white;
+  text-decoration: none;
+}
