@@ -4,6 +4,26 @@
   padding: 1.45rem 1.0875rem;
 }
 
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.siteTitle {
+  display: inline-block;
+}
+
+.siteTitle a {
+  color: white;
+  display: inline-block;
+  padding: .25rem;
+}
+
+.headerMenu {
+  display: inline-block;
+  float: right;
+}
+
 .menuLink {
   display: inline-block;
   padding: .25rem;
@@ -11,5 +31,4 @@
 
 .menuLink a {
   color: white;
-  text-decoration: none;
 }
