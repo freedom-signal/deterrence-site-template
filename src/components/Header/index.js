@@ -13,7 +13,9 @@ const MenuLink = props => (
 const Header = () => (
   <div className={styles.header}>
       <MenuLink label='Home' url='/'></MenuLink>
-      <MenuLink label='Page 2' url='/page-2'></MenuLink>
+      <MenuLink label='Harm' url='/harm'></MenuLink>
+      <MenuLink label='Consequences' url='/consequences'></MenuLink>
+      <MenuLink label='Alternatives' url='/alternatives'></MenuLink>
   </div>
 )
 
