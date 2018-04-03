@@ -16,10 +16,10 @@ gatsby develop
 Your site will be visible at `localhost:8000`
 
 ## Adding Custom Data
-:rotating-light: not yet implemented :rotating-light:
+:rotating_light: not yet implemented :rotating_light:
 
 ## Deploying
-:rotating-light: not yet implemented :rotating-light:
+:rotating_light: not yet implemented :rotating_light:
 
 
 # To do:
