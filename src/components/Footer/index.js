@@ -1,13 +1,9 @@
 import React from 'react'
+import styles from './index.module.css'
 
 const Footer = () => (
-  <footer style={{
-    background: 'purple',
-    color: 'white',
-    padding: '1.45rem 1.0875rem',
-  }}>
-
-    <span>Hello this is the footer!</span>
+  <footer className={styles.footer}>
+    <span className={styles.copyright}>© 2018 Seattle Against Slavery</span>
   </footer>
 )
 

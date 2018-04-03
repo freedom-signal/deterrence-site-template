@@ -1,32 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styles from './index.module.css'
+
+const MenuLink = props => (
+  <div className={styles.menuLink}>
+    <Link to={props.url}>
+      { props.label }
+    </Link>
+  </div>
+)
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
+  <div className={styles.header}>
+      <MenuLink label='Home' url='/'></MenuLink>
+      <MenuLink label='Page 2' url='/page-2'></MenuLink>
   </div>
 )
 
