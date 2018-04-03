@@ -12,10 +12,15 @@ const MenuLink = props => (
 
 const Header = () => (
   <div className={styles.header}>
-      <MenuLink label='Home' url='/'></MenuLink>
+    <div className={styles.siteTitle}>
+      <Link to='/'>Buyer Beware</Link>
+    </div>
+
+    <div className={styles.headerMenu}>
       <MenuLink label='Harm' url='/harm'></MenuLink>
       <MenuLink label='Consequences' url='/consequences'></MenuLink>
       <MenuLink label='Alternatives' url='/alternatives'></MenuLink>
+    </div>
   </div>
 )
 
