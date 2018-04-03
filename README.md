@@ -1,26 +1,35 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Seattle Against Slavery's Deterrence Website Generator
+A static site generator for our deterrence websites build on [Gatsby.js](https://www.gatsbyjs.org)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
-
-## Install
+## Run locally
 
 Make sure that you have the Gatsby CLI program installed:
 ```sh
 npm install --global gatsby-cli
 ```
 
-And run from your CLI:
+Run it locally with hot reloading:
 ```sh
-gatsby new gatsby-example-site
+gatsby develop
 ```
 
-Then you can run it by:
-```sh
-cd gatsby-example-site
-npm run develop
-```
+Your site will be visible at `localhost:8000`
 
-## Deploy
+## Adding Custom Data
+:rotating-light: not yet implemented :rotating-light:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Deploying
+:rotating-light: not yet implemented :rotating-light:
+
+
+# To do:
+- [ ] Create mobile menu 
+- [ ] Implement CSS Grid for homepage
+- [ ] Find content images
+- [ ] Update copy for pages
+- [ ] Back to top link after scrolling
+- [ ] Learn how to use a data file to pull data for different components
+- [ ] Set up config to generate the site into a new folder specifying a config file
+- [ ] Develop deployment strategy
+- [ ] Accessibility audit
+- [ ] Update readme 
