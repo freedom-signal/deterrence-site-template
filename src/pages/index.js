@@ -1,33 +1,38 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styles from './index.module.css'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Site Title</h1>
+    <p>Description blurb. Fusce in elit nunc. Donec at lectus velit.
+    Etiam iaculis, nisi ac fermentum feugiat, ipsum libero pretium tortor,
+    sit amet faucibus erat augue non dolor. Pellentesque et arcu porta, pellentesque
+    justo sit amet, accumsan quam. Vivamus nec lobortis nisi, vel pharetra lacus. </p>
 
-    <div>
-      <h1>Richard Hamming on Luck</h1>
-      <div>
-        <p>
-          From Richard Hamming’s classic and must-read talk, “<a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html">
-            You and Your Research
-          </a>”.
-        </p>
-        <blockquote>
-          <p>
-            There is indeed an element of luck, and no, there isn’t. The prepared
-            mind sooner or later finds something important and does it. So yes, it
-            is luck.{" "}
-            <em>
-              The particular thing you do is luck, but that you do something is
-              not.
-            </em>
-          </p>
-        </blockquote>
+    <div className={styles.iconsContainer}>
+
+      <div className={styles.cardContainer}>
+        <a href="/harm"><img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/></a>
+        <p>Short description - Harm  Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
-      <p>Posted April 09, 2011</p>
+
+      <div className={styles.cardContainer}>
+        <a href="/harm"><img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/></a>
+        <p>Short description - Consequences Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+
+      <div className={styles.cardContainer}>
+        <a href="/harm"><img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/></a>
+        <p>Short description - Alternatives Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+
+      <div className={styles.cardContainer}>
+        <a href="/harm"><img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/></a>
+        <p>Short description - Contact Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+
+
     </div>
   </div>
 )
