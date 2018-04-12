@@ -13,25 +13,32 @@ const IndexPage = () => (
     <div className={styles.iconsContainer}>
 
       <div className={styles.cardContainer}>
-        <a href="/harm"><img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/></a>
+        <a href="/harm">
+          <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+        </a>
         <p>Short description - Harm  Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
 
       <div className={styles.cardContainer}>
-        <a href="/harm"><img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/></a>
+        <a href="/consequences">
+          <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+        </a>
         <p>Short description - Consequences Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
 
       <div className={styles.cardContainer}>
-        <a href="/harm"><img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/></a>
+        <a href="/alternatives">
+          <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+        </a>
         <p>Short description - Alternatives Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
 
       <div className={styles.cardContainer}>
-        <a href="/harm"><img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/></a>
+        <a href="/">
+          <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+        </a>
         <p>Short description - Contact Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
-
 
     </div>
   </div>
