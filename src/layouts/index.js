@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 const TemplateWrapper = ({ data, children }) => (
   <div>
     <Helmet
-      title={ data.site.siteMetadata.title }
+      title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: data.site.siteMetadata.description },
         { name: 'keywords', content: 'sample, something' },
@@ -29,7 +29,7 @@ TemplateWrapper.propTypes = {
 }
 
 export const query = graphql`
-  query AboutQuery {
+  query LayoutQuery {
     site {
       siteMetadata {
         title

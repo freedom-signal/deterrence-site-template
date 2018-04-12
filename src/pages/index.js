@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const IndexPage = ({ data }) => (
   <div>
     <h1>Hi people</h1>
-    About {data.site.siteMetadata.description}
+    <p>site description from env file: { data.site.siteMetadata.description }</p>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
 
@@ -39,6 +39,7 @@ export const query = graphql`
       siteMetadata {
         title
         description
+        jail_time
       }
     }
   }
