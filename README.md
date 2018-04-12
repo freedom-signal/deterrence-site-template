@@ -16,7 +16,11 @@ gatsby develop
 Your site will be visible at `localhost:8000`
 
 ## Adding Custom Data
-:rotating_light: not yet implemented :rotating_light:
+Custom data is managed through the `gatsby-config` file and by passing in a command line flag for `REGION`. 
+
+To add a new region, make a duplicate of the `.env.default` file in the `regional_config` folder and rename it to `.env.NEW_REGION_NAME`. Then replace the contents with the values for your region. 
+
+Stop gatsby and restart with your new region environment by running: `REGION=NEW_REGION_NAME gatsby develop`. You will need to restart whenever you switch regions or when you make changes to your env file.
 
 ## Deploying
 :rotating_light: not yet implemented :rotating_light:
