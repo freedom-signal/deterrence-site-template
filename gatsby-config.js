@@ -5,7 +5,7 @@ if (!regionalConfig) {
 }
 
 require('dotenv').config({
-  path: `regional_configs/.env.${regionalConfig}`
+  path: `regional_config/.env.${regionalConfig}`
 });
 
 module.exports = {
