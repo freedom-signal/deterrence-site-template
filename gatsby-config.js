@@ -1,11 +1,11 @@
-let activeEnv = process.env.ACTIVE_ENV;
+let regionalConfig = process.env.REGION;
 
-if (!activeEnv) {
-  activeEnv = 'default';
+if (!regionalConfig) {
+  regionalConfig = 'default';
 }
 
 require('dotenv').config({
-  path: `environments/.env.${activeEnv}`
+  path: `regional_configs/.env.${regionalConfig}`
 });
 
 module.exports = {
