@@ -6,12 +6,12 @@ import styles from './index.module.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ data, children }) => (
   <div>
     <Helmet
-      title="Deterrence Default Starter"
+      title={ data.site.siteMetadata.title }
       meta={[
-        { name: 'description', content: 'Sample' },
+        { name: 'description', content: data.site.siteMetadata.description },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
@@ -28,4 +28,14 @@ TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
 
+export const query = graphql`
+  query AboutQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`
 export default TemplateWrapper

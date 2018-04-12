@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const IndexPage = ({ data }) => (
   <div>
     <h1>Hi people</h1>
-    About {data.site.siteMetadata.title}
+    About {data.site.siteMetadata.description}
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
 
@@ -34,10 +34,11 @@ const IndexPage = ({ data }) => (
 )
 
 export const query = graphql`
-  query AboutQuery {
+  query IndexQuery {
     site {
       siteMetadata {
         title
+        description
       }
     }
   }
