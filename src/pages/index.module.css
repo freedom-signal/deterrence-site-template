@@ -1,7 +1,90 @@
-.iconsContainer {
+/* Whole page layout */
+.pageContainer {
+  display: grid;
+  grid-template-areas: " . title . "
+                      " . description . "
+                      " . iconsContainer . ";
+  grid-template-columns: 1fr 5fr 1fr;
 
 }
+/* overall layout differs across screen sizes */
 
-.cardContainer {
-  
+/* mobile and tablet - vertical icons column */
+
+@media only screen  and (max-width : 1224px) {
+  .pageContainer {
+    grid-template-rows: 1fr 1fr 7fr;
+  }
+}
+
+/* desktop - horizontal icons row */
+
+@media only screen  and (min-width : 1224px) {
+  .pageContainer {
+    grid-template-rows: 1fr 1fr 2fr;
+  }
+}
+
+.pageContainer h1 {
+  grid-area: title;
+}
+
+.pageContainer p.siteDescription {
+  grid-area: description;
+}
+
+
+/* icons area layout differs across screen sizes */
+
+.iconsArea {
+  display: flex;
+  grid-area: iconsContainer;
+}
+
+/* mobile and tablet - vertical */
+
+@media only screen  and (max-width : 1224px) {
+  .iconsArea {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+/* desktop - horizontal */
+
+@media only screen  and (min-width : 1224px) {
+  .iconsArea {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+}
+
+/* Cards (icon + description) look the same across screen sizes */
+
+.iconCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 20%;
+  max-width: 450px;
+}
+
+/* COME BACK TO THIS */
+/* need to make it so icon doesn't become much bigger than description*/
+/* at intermediate screen sizes */
+
+.iconCard a {
+  flex-basis: 40%;
+}
+
+.iconCard img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.iconCard p.cardDescription {
+  flex-basis: 40%;
 }
