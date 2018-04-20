@@ -36,4 +36,5 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 - [ ] Set up config to generate the site into a new folder specifying a config file
 - [ ] Develop deployment strategy
 - [ ] Accessibility audit
+- [ ] Performance audit
 - [ ] Update readme 
