@@ -6,7 +6,6 @@ const typography = new Typography({
     baseLineHeight: 1.45,
     headerFontFamily: ['Cera-Bold', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
     bodyFontFamily: ['Cera-Light', 'serif'],
-    // See below for the full list of options.
   })
   
 export default typography;

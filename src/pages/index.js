@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from './index.module.css'
+import styles from './index.module.scss'
 
 const IndexPage = ({ data }) => (
   <div className={styles.pageContainer}>
@@ -37,9 +37,10 @@ const IndexPage = ({ data }) => (
       <div className={styles.iconCard}>
         <a href="/">
           <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+
+          <h2 className={styles.cardTitle}>Contact</h2>      
+          <p className={styles.cardDescription}>Get help from men who understand this experience.</p>
         </a>
-        <h2 className={styles.cardTitle}>Contact</h2>      
-        <p className={styles.cardDescription}>Get help from men who understand this experience.</p>
       </div>
 
     </div>

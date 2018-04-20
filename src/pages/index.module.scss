@@ -1,3 +1,5 @@
+@import '../utils/colors.scss';
+
 /* Whole page layout */
 .pageContainer {
   display: grid;
@@ -78,11 +80,18 @@
 
 .iconCard a {
   flex-basis: 40%;
+  text-decoration: none;
+  color: $dark-grey;
+  text-align: center;
 }
 
 .iconCard img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.iconCard h2.cardTitle {
+  margin-bottom: .75rem;
 }
 
 .iconCard p.cardDescription {
