@@ -1,47 +1,67 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from './index.module.css'
+import styles from './index.module.scss'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <div className={styles.pageContainer}>
-    <h1>Site Title</h1>
-    <p className={styles.siteDescription}>Description blurb. Fusce in elit nunc. Donec at lectus velit.
-    Etiam iaculis, nisi ac fermentum feugiat, ipsum libero pretium tortor,
-    sit amet faucibus erat augue non dolor. Pellentesque et arcu porta, pellentesque
-    justo sit amet, accumsan quam. Vivamus nec lobortis nisi, vel pharetra lacus. </p>
-
+    <div className={styles.intro}>
+      <h1>{data.site.siteMetadata.title}</h1>
+      <p className={styles.tagline}>It's not as harmless as you think.</p>
+      <span className={styles.dividerLine}></span>
+      <p className={styles.siteDescription}>{data.site.siteMetadata.description}</p>
+    </div>
+    
     <div className={styles.iconsArea}>
 
       <div className={styles.iconCard}>
         <a href="/harm">
           <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+
+            <h2 className={styles.cardTitle}>Harm</h2>
+          <p className={styles.cardDescription}>Beatings, rapes and murder are a reality of prostitution.</p>
         </a>
-        <p className={styles.cardDescription}>Short description - Harm  Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
 
       <div className={styles.iconCard}>
         <a href="/consequences">
           <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+
+          <h2 className={styles.cardTitle}>Consequences</h2>
+          <p className={styles.cardDescription}>Police are arresting men who buy sex.</p>
         </a>
-        <p className={styles.cardDescription}>Short description - Consequences Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
 
       <div className={styles.iconCard}>
         <a href="/alternatives">
           <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+
+          <h2 className={styles.cardTitle}>Alternatives</h2>     
+          <p className={styles.cardDescription}>Make the choice without regret.</p>
         </a>
-        <p className={styles.cardDescription}>Short description - Alternatives Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
 
       <div className={styles.iconCard}>
         <a href="/">
           <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+
+          <h2 className={styles.cardTitle}>Contact</h2>      
+          <p className={styles.cardDescription}>Get help from men who understand this experience.</p>
         </a>
-        <p className={styles.cardDescription}>Short description - Contact Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
 
     </div>
   </div>
 )
+
+export const query = graphql`
+  query HomeQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`
 
 export default IndexPage
