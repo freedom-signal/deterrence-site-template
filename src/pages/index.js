@@ -4,17 +4,20 @@ import styles from './index.module.scss'
 
 const IndexPage = ({ data }) => (
   <div className={styles.pageContainer}>
-    <h1>{data.site.siteMetadata.title}</h1>
-    <p>It's not as harmless as you think.</p>
-    <p className={styles.siteDescription}>{data.site.siteMetadata.description}</p>
-
+    <div className={styles.intro}>
+      <h1>{data.site.siteMetadata.title}</h1>
+      <p className={styles.tagline}>It's not as harmless as you think.</p>
+      <span className={styles.dividerLine}></span>
+      <p className={styles.siteDescription}>{data.site.siteMetadata.description}</p>
+    </div>
+    
     <div className={styles.iconsArea}>
 
       <div className={styles.iconCard}>
         <a href="/harm">
           <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
 
-          <h2 className={styles.cardTitle}>Harm</h2>
+            <h2 className={styles.cardTitle}>Harm</h2>
           <p className={styles.cardDescription}>Beatings, rapes and murder are a reality of prostitution.</p>
         </a>
       </div>

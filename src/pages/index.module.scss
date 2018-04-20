@@ -2,9 +2,9 @@
 
 /* Whole page layout */
 .pageContainer {
+  text-align: center;
   display: grid;
-  grid-template-areas: " . title . "
-                      " . description . "
+  grid-template-areas: " . intro . "
                       " . iconsContainer . ";
   grid-template-columns: 1fr 5fr 1fr;
 
@@ -15,7 +15,7 @@
 
 @media only screen  and (max-width : 1224px) {
   .pageContainer {
-    grid-template-rows: 1fr 1fr 7fr;
+    grid-template-rows: 1fr 7fr;
   }
 }
 
@@ -23,16 +23,12 @@
 
 @media only screen  and (min-width : 1224px) {
   .pageContainer {
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
   }
 }
 
-.pageContainer h1 {
-  grid-area: title;
-}
-
-.pageContainer p.siteDescription {
-  grid-area: description;
+.pageContainer .intro {
+  grid-area: intro;
 }
 
 
@@ -82,7 +78,6 @@
   flex-basis: 40%;
   text-decoration: none;
   color: $dark-grey;
-  text-align: center;
 }
 
 .iconCard img {
