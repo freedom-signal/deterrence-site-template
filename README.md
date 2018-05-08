@@ -8,6 +8,11 @@ Make sure that you have the Gatsby CLI program installed:
 npm install --global gatsby-cli
 ```
 
+Install dependencies:
+```sh
+npm install
+```
+
 Run it locally with hot reloading:
 ```sh
 gatsby develop
@@ -35,7 +40,7 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 - [ ] Create mobile menu
 - [ ] Implement CSS Grid / flexbox layouts on all pages, fix icon size weirdness caused by CSS Grid on homepage
 - [ ] Back to top link after scrolling on mobile
-- [ ] Update `package.json` name, description, author, etc.
+- [x] Update `package.json` name, description, author, etc.
 - [ ] Set up config to generate the site into a new folder specifying a config file
 - [ ] Develop deployment strategy
 - [ ] Accessibility audit
