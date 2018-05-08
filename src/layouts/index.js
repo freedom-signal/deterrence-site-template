@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const TemplateWrapper = ({ data, children }) => (
-  <div>
+  <div className={styles.wrapper}>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -15,7 +15,9 @@ const TemplateWrapper = ({ data, children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    
     <Header />
+
     <div className={styles.innerContainer}>
       {children()}
     </div>
