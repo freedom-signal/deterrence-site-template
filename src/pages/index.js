@@ -1,6 +1,11 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import styles from './index.module.scss'
+import React from 'react';
+import Link from 'gatsby-link';
+import styles from './index.module.scss';
+
+import harmIcon from '../assets/images/harm-icon.png';
+import consequencesIcon from '../assets/images/consequences-icon.png';
+import alternativesIcon from '../assets/images/alternatives-icon.png';
+import contactIcon from '../assets/images/contact-icon.png';
 
 const IndexPage = ({ data }) => (
   <div className={styles.pageContainer}>
@@ -15,7 +20,7 @@ const IndexPage = ({ data }) => (
 
       <div className={styles.iconCard}>
         <a href="/harm">
-          <img src="/assets/images/harm-icon.png" alt="Placeholder cat icon"/>
+          <img src={harmIcon} alt="Placeholder cat icon"/>
 
             <h2 className={styles.cardTitle}>Harm</h2>
           <p className={styles.cardDescription}>Beatings, rapes and murder are a reality of prostitution.</p>
@@ -24,7 +29,7 @@ const IndexPage = ({ data }) => (
 
       <div className={styles.iconCard}>
         <a href="/consequences">
-          <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+          <img src={consequencesIcon} alt="Placeholder cat icon"/>
 
           <h2 className={styles.cardTitle}>Consequences</h2>
           <p className={styles.cardDescription}>Police are arresting men who buy sex.</p>
@@ -33,7 +38,7 @@ const IndexPage = ({ data }) => (
 
       <div className={styles.iconCard}>
         <a href="/alternatives">
-          <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+          <img src={alternativesIcon} alt="Placeholder cat icon"/>
 
           <h2 className={styles.cardTitle}>Alternatives</h2>     
           <p className={styles.cardDescription}>Make the choice without regret.</p>
@@ -42,7 +47,7 @@ const IndexPage = ({ data }) => (
 
       <div className={styles.iconCard}>
         <a href="/">
-          <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+          <img src={contactIcon} alt="Placeholder cat icon"/>
 
           <h2 className={styles.cardTitle}>Contact</h2>      
           <p className={styles.cardDescription}>Get help from men who understand this experience.</p>
