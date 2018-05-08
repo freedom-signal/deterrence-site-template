@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => (
       </div>
 
       <div className={styles.iconCard}>
-        <a href="/">
+        <a href="/contact">
           <img src={contactIcon} alt="An icon of an envelope"/>
 
           <h2 className={styles.cardTitle}>Contact</h2>      
