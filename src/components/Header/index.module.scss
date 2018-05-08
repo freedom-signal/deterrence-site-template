@@ -1,4 +1,4 @@
-@import '../../utils/colors.scss';
+@import '../../assets/shared-styles/colors.module.scss';
 
 .header {
   background: $blue;
@@ -32,5 +32,5 @@
 }
 
 .menuLink a {
-  color:$off-white;
+  color: $off-white;
 }

@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
 
       <div className={styles.iconCard}>
         <a href="/harm">
-          <img src="http://www.free-icons-download.net/images/halloween-scary-black-cat-icon-72554.png" alt="Placeholder cat icon"/>
+          <img src="/assets/images/harm-icon.png" alt="Placeholder cat icon"/>
 
             <h2 className={styles.cardTitle}>Harm</h2>
           <p className={styles.cardDescription}>Beatings, rapes and murder are a reality of prostitution.</p>

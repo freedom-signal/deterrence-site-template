@@ -1,4 +1,4 @@
-@import '../utils/colors.scss';
+@import '../assets/shared-styles/shared.module.scss';
 
 /* Whole page layout */
 .pageContainer {
@@ -30,7 +30,6 @@
 .pageContainer .intro {
   grid-area: intro;
 }
-
 
 /* icons area layout differs across screen sizes */
 
