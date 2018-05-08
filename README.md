@@ -41,7 +41,7 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 - [ ] Set up zapier webhook for emails (for contact page)
 - [ ] Contact page content
 - [ ] Create mobile menu
-- [ ] Implement CSS Grid / flexbox layouts on all pages, fix icon size weirdness caused by CSS Grid on homepage
+- [ ] Implement CSS Grid / flexbox layouts on all pages
 - [ ] Back to top link after scrolling on mobile
 - [x] Update `package.json` name, description, author, etc.
 - [ ] Set up config to generate the site into a new folder specifying a config file

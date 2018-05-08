@@ -1,0 +1,11 @@
+@import '../../assets/shared-styles/colors.module.scss';
+
+.footer {
+  background-color: $dark-grey;
+  color: $teal;
+  padding: .5rem;
+}
+
+.copyright {
+  color: $light-grey;
+}

@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import styles from './index.module.css'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import styles from './index.module.scss';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const TemplateWrapper = ({ data, children }) => (
-  <div>
+  <div className={styles.wrapper}>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -15,7 +15,9 @@ const TemplateWrapper = ({ data, children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    
     <Header />
+
     <div className={styles.innerContainer}>
       {children()}
     </div>

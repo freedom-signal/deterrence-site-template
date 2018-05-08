@@ -1,11 +1,14 @@
+@import '../../assets/shared-styles/colors.module.scss';
+@import '../../assets/shared-styles/shared.module.scss';
+
 .header {
-  background: rebeccapurple;
-  margin: 0px auto 1.45rem;
+  background: $blue;
+  margin-bottom: 1.45rem;
   padding: 1.45rem 1.0875rem;
 }
 
 .header a {
-  color: white;
+  color: $off-white;
   text-decoration: none;
 }
 
@@ -14,7 +17,7 @@
 }
 
 .siteTitle a {
-  color: white;
+  color: $off-white;
   display: inline-block;
   padding: .25rem;
 }
@@ -30,5 +33,5 @@
 }
 
 .menuLink a {
-  color: white;
+  color: $off-white;
 }
