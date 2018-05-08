@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import styles from './contact.module.scss';
 import sharedStyles from '../assets/shared-styles/shared.module.scss';
 
 const HarmPage = () => (
-  <div>
+  <div className={styles.pageWrapper}>
     <div>
       <h1>Want to talk?</h1>
       <div className={sharedStyles.dividerLine}></div>
@@ -11,10 +12,13 @@ const HarmPage = () => (
       <p>Our resources counselor will connect you with services in your area.</p>
     </div>
 
-    <div>
-      <input></input>
+    <form>
+      <input className={styles.emailField}
+            type='email' 
+            placeholder='your email address' >
+      </input>
       <button>Get confidential help</button>
-    </div>
+    </form>
   </div>
 )
 

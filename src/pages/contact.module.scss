@@ -1,0 +1,15 @@
+@import '../assets/shared-styles/colors.module.scss';
+
+.emailField {
+    border: 0.75px solid $light-grey;
+    border-radius: 15px;
+    display: block;
+    height: 2.5rem;
+    margin: 1rem auto;
+    min-width: 300px;
+    padding: 0 1rem;
+}
+
+.pageWrapper {
+    text-align: center;
+}
