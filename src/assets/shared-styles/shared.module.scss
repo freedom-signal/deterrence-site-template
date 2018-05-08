@@ -1,7 +1,8 @@
 @import './colors.module.scss';
 
-span.dividerLine {
-    width: 150px;
-    height: 0px;
+.dividerLine {
     border: 0.5px solid $medium-grey;
+    height: 0px;
+    margin: 1.45rem auto;
+    width: 150px;
 }

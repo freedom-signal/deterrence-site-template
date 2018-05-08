@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styles from './index.module.scss';
+import sharedStyles from '../assets/shared-styles/shared.module.scss';
+
 
 import harmIcon from '../assets/images/harm-icon.png';
 import consequencesIcon from '../assets/images/consequences-icon.png';
@@ -12,7 +14,7 @@ const IndexPage = ({ data }) => (
     <div className={styles.intro}>
       <h1>{data.site.siteMetadata.title}</h1>
       <p className={styles.tagline}>It's not as harmless as you think.</p>
-      <span className={styles.dividerLine}></span>
+      <div className={sharedStyles.dividerLine}></div>
       <p className={styles.siteDescription}>{data.site.siteMetadata.description}</p>
     </div>
     
