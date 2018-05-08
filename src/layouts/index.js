@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import styles from './index.module.css'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import styles from './index.module.scss';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const TemplateWrapper = ({ data, children }) => (
   <div>
