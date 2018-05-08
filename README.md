@@ -27,14 +27,17 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 
 
 # To do:
-- [ ] Create mobile menu 
 - [x] Implement CSS Grid for homepage
 - [x] Find content images
-- [ ] Update copy for pages
-- [ ] Back to top link after scrolling
 - [x] Learn how to use a data file to pull data for different components
+- [ ] Image optimization
+- [ ] Update copy for pages
+- [ ] Create mobile menu
+- [ ] Implement CSS Grid / flexbox layouts on all pages, fix icon size weirdness caused by CSS Grid on homepage
+- [ ] Back to top link after scrolling on mobile
+- [ ] Update `package.json` name, description, author, etc.
 - [ ] Set up config to generate the site into a new folder specifying a config file
 - [ ] Develop deployment strategy
 - [ ] Accessibility audit
 - [ ] Performance audit
-- [ ] Update readme 
+- [ ] Update readme
