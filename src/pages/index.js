@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
 
       <div className={styles.iconCard}>
         <a href="/harm">
-          <img src={harmIcon} alt="Placeholder cat icon"/>
+          <img src={harmIcon} alt="An icon of a medical bag"/>
 
             <h2 className={styles.cardTitle}>Harm</h2>
           <p className={styles.cardDescription}>Beatings, rapes and murder are a reality of prostitution.</p>
@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => (
 
       <div className={styles.iconCard}>
         <a href="/consequences">
-          <img src={consequencesIcon} alt="Placeholder cat icon"/>
+          <img src={consequencesIcon} alt="An icon of handcuffs"/>
 
           <h2 className={styles.cardTitle}>Consequences</h2>
           <p className={styles.cardDescription}>Police are arresting men who buy sex.</p>
@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => (
 
       <div className={styles.iconCard}>
         <a href="/alternatives">
-          <img src={alternativesIcon} alt="Placeholder cat icon"/>
+          <img src={alternativesIcon} alt="An icon of the Alt key"/>
 
           <h2 className={styles.cardTitle}>Alternatives</h2>     
           <p className={styles.cardDescription}>Make the choice without regret.</p>
@@ -49,7 +49,7 @@ const IndexPage = ({ data }) => (
 
       <div className={styles.iconCard}>
         <a href="/">
-          <img src={contactIcon} alt="Placeholder cat icon"/>
+          <img src={contactIcon} alt="An icon of an envelope"/>
 
           <h2 className={styles.cardTitle}>Contact</h2>      
           <p className={styles.cardDescription}>Get help from men who understand this experience.</p>
