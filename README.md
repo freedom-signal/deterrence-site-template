@@ -36,7 +36,10 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 - [x] Find content images
 - [x] Learn how to use a data file to pull data for different components
 - [ ] Image optimization
-- [ ] Update copy for pages
+- [ ] Harm page content 
+- [ ] Alternatives page content 
+- [ ] Set up zapier webhook for emails (for contact page)
+- [ ] Contact page content
 - [ ] Create mobile menu
 - [ ] Implement CSS Grid / flexbox layouts on all pages, fix icon size weirdness caused by CSS Grid on homepage
 - [ ] Back to top link after scrolling on mobile
