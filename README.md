@@ -33,7 +33,7 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 - [ ] Image optimization
 - [ ] Update copy for pages
 - [ ] Create mobile menu
-- [ ] Implement CSS Grid / flexbox layouts on all pages, fix icon size weirdness caused by CSS Grid on homepage
+- [ ] Implement CSS Grid / flexbox layouts on all pages
 - [ ] Back to top link after scrolling on mobile
 - [ ] Update `package.json` name, description, author, etc.
 - [ ] Set up config to generate the site into a new folder specifying a config file
