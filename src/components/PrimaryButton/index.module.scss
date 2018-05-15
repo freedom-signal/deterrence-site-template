@@ -1,0 +1,9 @@
+@import '../../assets/shared-styles/colors.module.scss';
+
+.primaryButton {
+    background-color: $blue;
+    border: none;
+    border-radius: 10px;
+    color: $off-white;
+    padding: .5rem .75rem;
+}

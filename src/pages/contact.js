@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
+import PrimaryButton from '../components/PrimaryButton';
+
 import styles from './contact.module.scss';
 import sharedStyles from '../assets/shared-styles/shared.module.scss';
 
@@ -12,7 +14,7 @@ const ContactPage = ({ data }) => (
     sizes={data.heroImage.sizes}
     />
 
-    <div className={styles.pageWrapper}>
+    <div className={sharedStyles.pageWrapper}>
       <div>
         <h1>Want to talk?</h1>
         <div className={sharedStyles.dividerLine}></div>
@@ -25,7 +27,7 @@ const ContactPage = ({ data }) => (
               type='email' 
               placeholder='your email address' >
         </input>
-        <button>Get confidential help</button>
+        <PrimaryButton url="/">Get Confidential Help</PrimaryButton>
       </form>
     </div>
   </div>
