@@ -22,11 +22,15 @@ const ContactPage = ({ data }) => (
         <p>Our resources counselor will connect you with services in your area.</p>
       </div>
 
-      <form>
-        <input className={styles.emailField}
-              type='email' 
-              placeholder='your email address' >
-        </input>
+      <form >
+        <div className={styles.contactInput}>
+          <i className={styles.inputIcon}></i>
+          <input className={styles.emailField}
+            type='email' 
+            placeholder='your email address' >
+          </input>
+        </div>
+        
         <PrimaryButton url="/">Get Confidential Help</PrimaryButton>
       </form>
     </div>
