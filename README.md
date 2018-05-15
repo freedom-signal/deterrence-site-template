@@ -39,7 +39,7 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 - [ ] Harm page content 
 - [ ] Alternatives page content 
 - [ ] Set up zapier webhook for emails (for contact page)
-- [ ] Contact page content
+- [X] Contact page content
 - [ ] Create mobile menu
 - [ ] Implement CSS Grid / flexbox layouts on all pages
 - [ ] Back to top link after scrolling on mobile
