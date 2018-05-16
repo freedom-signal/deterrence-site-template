@@ -1,0 +1,16 @@
+@import '../../assets/shared-styles/colors.module.scss';
+@import '../../assets/shared-styles/shared.module.scss';
+
+.rightMenu {
+  float: right;
+}
+
+.menuLink {
+  display: inline-block;
+  padding: .25rem;
+}
+
+.menuLink a {
+  color: $off-white;
+  text-decoration: none;
+}
