@@ -14,7 +14,7 @@ const MenuLink = props => (
 
 
 const DesktopMenu = () => (
-  <div>
+  <nav>
     <MenuLink label='Buyer Beware' url='/' aria-label='Home' className={styles.siteTitle}></MenuLink>
     <div className={styles.rightMenu}>
       <MenuLink label='Harm' url='/harm'></MenuLink>
@@ -22,7 +22,7 @@ const DesktopMenu = () => (
       <MenuLink label='Alternatives' url='/alternatives'></MenuLink>
       <MenuLink label='Contact' url='/contact'></MenuLink>
     </div>
-  </div>
+  </nav>
 )
 
 
