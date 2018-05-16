@@ -25,6 +25,7 @@ const ContactPage = ({ data }) => (
       <form >
         <div className={styles.contactInput}>
           <i className={styles.inputIcon}></i>
+          <label className={styles.hidden}>Email address</label>
           <input className={styles.emailField}
             type='email' 
             placeholder='your email address' >
