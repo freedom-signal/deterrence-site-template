@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import MediaQuery from 'react-responsive';
+import { slide as Menu } from 'react-burger-menu';
 
 import styles from './index.module.scss';
 
