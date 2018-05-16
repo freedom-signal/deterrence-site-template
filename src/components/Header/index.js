@@ -20,6 +20,7 @@ const Header = () => (
       <MenuLink label='Harm' url='/harm'></MenuLink>
       <MenuLink label='Consequences' url='/consequences'></MenuLink>
       <MenuLink label='Alternatives' url='/alternatives'></MenuLink>
+      <MenuLink label='Contact' url='/contact'></MenuLink>
     </div>
   </div>
 )

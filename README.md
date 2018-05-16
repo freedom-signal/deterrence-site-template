@@ -39,7 +39,7 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 - [ ] Harm page content 
 - [ ] Alternatives page content 
 - [ ] Set up zapier webhook for emails (for contact page)
-- [ ] Contact page content
+- [X] Contact page content
 - [ ] Create mobile menu
 - [ ] Menu should highlight the current page (underline on desktop, line or bold on mobile)
 - [ ] Stretch goal: On desktop, do something when menu item is hovered over (change color?)

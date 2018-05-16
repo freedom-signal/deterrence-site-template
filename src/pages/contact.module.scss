@@ -1,0 +1,31 @@
+@import '../assets/shared-styles/colors.module.scss';
+
+.contactInput {
+    position: relative;
+    border: 0.75px solid $light-grey;
+    border-radius: 15px;
+    max-width: 300px;
+    margin: 1rem auto;
+    height: 2.5rem;
+}
+
+.inputIcon {
+    width: 15px;
+    height: 18px;
+    display: inline-block;
+    background: url('../assets/images/contact-icon-inverse.png');
+    background-size: contain;
+    position: absolute;
+    top: .75rem;
+    left: .75rem;
+}
+
+.emailField {
+    border: none;
+    height: 95%;
+    width: 80%;
+    float: right;
+    padding: 0 .25rem;
+    margin-right: .5rem;
+    margin-top: .05rem;
+}
