@@ -3,9 +3,9 @@ import { options } from '../../utils/typography';
 
 import styles from './index.module.scss';
 
-const PrimaryButton = ({children}) => (
-  <button className={styles.primaryButton} style={{fontFamily: options.headerFontFamily.join(`,`)}}>
-    {children}
+const PrimaryButton = props => (
+  <button className={styles.primaryButton} style={{fontFamily: options.headerFontFamily.join(`,`)}} id={props.buttonId}>
+    { props.children }
   </button>
 )
 

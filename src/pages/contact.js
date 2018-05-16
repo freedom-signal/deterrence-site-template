@@ -22,7 +22,7 @@ const ContactPage = ({ data }) => (
         <p>Our resources counselor will connect you with services in your area.</p>
       </div>
 
-      <form >
+      <form action='https://hooks.zapier.com/hooks/catch/3064004/a4ds27/' method='POST'>
         <div className={styles.contactInput}>
           <i className={styles.inputIcon}></i>
           <label className={styles.hidden}>Email address</label>
@@ -32,7 +32,7 @@ const ContactPage = ({ data }) => (
           </input>
         </div>
         
-        <PrimaryButton url="/">Get Confidential Help</PrimaryButton>
+        <PrimaryButton buttonId='submit-email-form'>Get Confidential Help</PrimaryButton>
       </form>
     </div>
   </div>
