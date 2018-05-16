@@ -17,7 +17,8 @@ module.exports = {
     sex_offender_registry: process.env.SEX_OFFENDER_REGISTRY,
     alternatives_website: process.env.ALTERNATIVES_WEBSITE,
     alternatives_url: process.env.ALTERNATIVES_URL,
-    alternatives_phone: process.env.ALTERNATIVES_PHONE
+    alternatives_phone: process.env.ALTERNATIVES_PHONE,
+    contact_webhook: process.env.CONTACT_WEBHOOK
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
