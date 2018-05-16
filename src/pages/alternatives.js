@@ -9,9 +9,9 @@ const AlternativesPage = ({ data }) => (
       sizes={data.alternativesImage.sizes}
     />
     <h1>Alternatives</h1>
-    <p>{ data.site.siteMetadata.contact_website }</p>
-    <p>{ data.site.siteMetadata.contact_url }</p>
-    <p>{ data.site.siteMetadata.contact_phone }</p>
+    <p>{ data.site.siteMetadata.alternatives_website }</p>
+    <p>{ data.site.siteMetadata.alternatives_url }</p>
+    <p>{ data.site.siteMetadata.alternatives_phone }</p>
   </div>
 )
 
@@ -19,9 +19,9 @@ export const query = graphql`
   query AlternativesQuery {
     site {
       siteMetadata {
-        contact_website
-        contact_url
-        contact_phone
+        alternatives_website
+        alternatives_url
+        alternatives_phone
       }
     }
     alternativesImage: imageSharp(id: {regex: "/alternatives1/"}) {
