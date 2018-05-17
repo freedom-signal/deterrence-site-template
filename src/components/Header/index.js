@@ -4,13 +4,13 @@ import Menu from 'react-burger-menu/lib/menus/slide';
 
 import styles from './index.module.scss';
 import DesktopMenu from '../DesktopMenu/index.js'
-
+import MobileMenu from '../MobileMenu/index.jsx'
 
 
 const Header = () => (
   <div className={styles.header}>
     <MediaQuery query="(max-width: 650px)">
-      <div>hi</div>
+      <MobileMenu> </MobileMenu>
     </MediaQuery>
    
     <MediaQuery query="(min-width: 651px)">
