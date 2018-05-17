@@ -12,7 +12,6 @@ const MenuLink = props => (
   </div>
 )
 
-
 const DesktopMenu = () => (
   <nav>
     <MenuLink label='Buyer Beware' url='/' aria-label='Home' className={styles.siteTitle}></MenuLink>
@@ -24,6 +23,5 @@ const DesktopMenu = () => (
     </div>
   </nav>
 )
-
 
 export default DesktopMenu
