@@ -1,7 +1,6 @@
 @import '../../assets/shared-styles/colors.module.scss';
 @import '../../assets/shared-styles/shared.module.scss';
 
-
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -16,15 +15,28 @@
   background: $off-white;
 }
 
+/* Need to use !important here (for cross button).
+This is to override inline styles from react-burger-menu. */
+
 /* Position and sizing of clickable cross button */
+
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 40px !important;
+  width: 40px !important;
+  top: 5px !important;
+  right: 35px !important;
+}
+
+.bm-cross-button span:not(.bm-cross) {
+  right: 60% !important;
+  top: 5% !important;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
   background: $off-white;
+  height: 35px !important;
+  width: 7px !important;
 }
 
 /* General sidebar styles */
@@ -43,6 +55,8 @@
 .bm-item-list a {
   color: $off-white;
   text-decoration: none;
+  margin: 0 1vw 3vh;
+  padding: 3vh 2vw;
 }
 
 /* Styling of overlay */
