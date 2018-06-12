@@ -1,25 +1,27 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 
-import styles from './index.module.scss';
-
+import styles from './index.module.scss'
 
 const MenuLink = props => (
   <div className={styles.menuLink}>
-    <Link to={props.url}>
-      { props.label }
-    </Link>
+    <Link to={props.url}>{props.label}</Link>
   </div>
 )
 
 const DesktopMenu = () => (
   <nav>
-    <MenuLink label='Buyer Beware' url='/' aria-label='Home' className={styles.siteTitle}></MenuLink>
+    <MenuLink
+      label="Buyer Beware"
+      url="/"
+      aria-label="Home"
+      className={styles.siteTitle}
+    />
     <div className={styles.rightMenu}>
-      <MenuLink label='Harm' url='/harm'></MenuLink>
-      <MenuLink label='Consequences' url='/consequences'></MenuLink>
-      <MenuLink label='Alternatives' url='/alternatives'></MenuLink>
-      <MenuLink label='Contact' url='/contact'></MenuLink>
+      <MenuLink label="Harm" url="/harm" />
+      <MenuLink label="Consequences" url="/consequences" />
+      <MenuLink label="Alternatives" url="/alternatives" />
+      <MenuLink label="Contact" url="/contact" />
     </div>
   </nav>
 )
