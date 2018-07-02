@@ -27,6 +27,7 @@ class MobileMenu extends Component {
     return (
       <Menu
         right
+        noOverlay
         width={'100%'}
         isOpen={this.state.menuOpen}
         onStateChange={state => this.handleStateChange(state)}
