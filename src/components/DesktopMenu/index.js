@@ -5,7 +5,9 @@ import styles from './index.module.scss'
 
 const MenuLink = props => (
   <div className={styles.menuLink}>
-    <Link to={props.url}>{props.label}</Link>
+    <Link to={props.url} exact activeStyle={{ textDecoration: 'underline' }}>
+      {props.label}
+    </Link>
   </div>
 )
 
