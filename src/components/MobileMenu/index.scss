@@ -21,10 +21,14 @@ This is to override inline styles from react-burger-menu. */
 /* Position and sizing of clickable cross button */
 
 .bm-cross-button {
-  height: 40px !important;
   width: 40px !important;
-  top: 5px !important;
-  right: 35px !important;
+  height: 40px !important;
+  right: 34px !important;
+  top: 32px !important;
+  // height: 40px !important;
+  // width: 40px !important;
+  // top: 5px !important;
+  // right: 35px !important;
 }
 
 .bm-cross-button span:not(.bm-cross) {
