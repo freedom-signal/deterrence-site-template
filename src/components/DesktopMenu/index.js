@@ -12,7 +12,7 @@ const MenuLink = props => (
 )
 
 const DesktopMenu = () => (
-  <nav>
+  <nav className={styles.desktopNav}>
     <MenuLink label="Buyer Beware" url="/" aria-label="Home" />
     <div className={styles.rightMenu}>
       <MenuLink label="Harm" url="/harm" />
