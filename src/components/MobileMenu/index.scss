@@ -17,12 +17,12 @@ This is to override inline styles from react-burger-menu.
 Expanding the clickable area of the burger button. */
 
 div.bm-burger-button > button {
-  top: -20% !important;
-  bottom: -20% !important;
-  left: -20% !important;
-  right: -20% !important;
-  width: 140% !important;
-  height: 140% !important;
+  top: -40% !important;
+  bottom: -40% !important;
+  left: -40% !important;
+  right: -40% !important;
+  width: 180% !important;
+  height: 180% !important;
 }
 
 /* Creates a circular background to make burger button visible after scrolling */
@@ -48,10 +48,10 @@ This is to override inline styles from react-burger-menu. */
 /* Position and sizing of clickable cross button */
 
 .bm-cross-button {
-  width: 40px !important;
-  height: 40px !important;
-  right: 34px !important;
-  top: 32px !important;
+  width: 25px !important;
+  height: 25px !important;
+  right: 2.6vh !important;
+  top: 3vh !important;
 }
 
 .bm-cross-button span:not(.bm-cross) {
@@ -62,8 +62,18 @@ This is to override inline styles from react-burger-menu. */
 /* Color/shape of close button cross */
 .bm-cross {
   background: $off-white;
-  height: 35px !important;
-  width: 7px !important;
+  height: 25px !important;
+  width: 5px !important;
+}
+
+/* Expanding clickable area for cross button */
+div.bm-cross-button > button {
+  top: -40% !important;
+  bottom: -40% !important;
+  left: -40% !important;
+  right: -40% !important;
+  width: 180% !important;
+  height: 180% !important;
 }
 
 /* General sidebar styles */
