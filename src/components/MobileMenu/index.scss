@@ -2,15 +2,14 @@
 @import '../../assets/shared-styles/shared.module.scss';
 
 /* Position and sizing of burger button */
+/* NOTE: height in pixels has to be divisible by 5
+for the bars to look even */
 div.bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 36px;
-  // background: red;
-  // border-radius: 50%;
-  // background: radial-gradient(circle at 100%, red) !important;
+  width: 25px;
+  height: 20px;
+  right: 2.6vh;
+  top: 3vh;
 }
 
 /* Need to use !important here (for burger button).
@@ -27,14 +26,15 @@ div.bm-burger-button > button {
 }
 
 /* Creates a circular background to make burger button visible after scrolling */
+// Width and height here should match div.bm-burger-button width and height
 div.bm-burger-button::after {
   content: '';
-  height: 30px;
-  width: 36px;
+  width: 25px;
+  height: 20px;
   background: radial-gradient(circle at center, $blue 50%, transparent 52%);
   position: absolute;
   z-index: -1;
-  transform: scale(2.75, 2.75);
+  transform: scale(2.7, 2.7);
 }
 
 /* Color/shape of burger icon bars */
