@@ -1,0 +1,28 @@
+@import '../../assets/shared-styles/colors.module.scss';
+@import '../../assets/shared-styles/shared.module.scss';
+
+nav.desktopNav {
+  margin: 1.45rem 1.0875rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.menuLink {
+  display: inline-block;
+  padding: 0.25rem;
+}
+
+.menuLink a {
+  color: $off-white;
+  text-decoration: none;
+  padding: 0.75rem 0;
+}
+
+// The "Buyer Beware" home link
+nav > .menuLink a {
+  font-weight: bold;
+  font-size: 1.3rem;
+}

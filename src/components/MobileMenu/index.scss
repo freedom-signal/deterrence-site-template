@@ -1,0 +1,97 @@
+@import '../../assets/shared-styles/colors.module.scss';
+@import '../../assets/shared-styles/shared.module.scss';
+
+/* Position and sizing of burger button */
+/* NOTE: height in pixels has to be divisible by 5
+for the bars to look even */
+div.bm-burger-button {
+  position: fixed;
+  width: 25px;
+  height: 20px;
+  right: 2.6vh;
+  top: 3vh;
+}
+
+/* Need to use !important here (for burger button).
+This is to override inline styles from react-burger-menu.
+Expanding the clickable area of the burger button. */
+
+div.bm-burger-button > button {
+  top: -40% !important;
+  bottom: -40% !important;
+  left: -40% !important;
+  right: -40% !important;
+  width: 180% !important;
+  height: 180% !important;
+}
+
+/* Creates a circular background to make burger button visible after scrolling */
+// Width and height here should match div.bm-burger-button width and height
+div.bm-burger-button::after {
+  content: '';
+  width: 25px;
+  height: 20px;
+  background: radial-gradient(circle at center, $blue 50%, transparent 52%);
+  position: absolute;
+  z-index: -1;
+  transform: scale(2.7, 2.7);
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $off-white;
+}
+
+/* Need to use !important here (for cross button).
+This is to override inline styles from react-burger-menu. */
+
+/* Position and sizing of clickable cross button */
+
+.bm-cross-button {
+  width: 25px !important;
+  height: 25px !important;
+  right: 2.6vh !important;
+  top: 3vh !important;
+}
+
+.bm-cross-button span:not(.bm-cross) {
+  right: 60% !important;
+  top: 5% !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: $off-white;
+  height: 25px !important;
+  width: 5px !important;
+}
+
+/* Expanding clickable area for cross button */
+div.bm-cross-button > button {
+  top: -40% !important;
+  bottom: -40% !important;
+  left: -40% !important;
+  right: -40% !important;
+  width: 180% !important;
+  height: 180% !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $blue;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  padding: 0.8em;
+}
+
+/* Menu items */
+.bm-item-list a {
+  color: $off-white;
+  text-decoration: none;
+  margin: 0 1vw 3vh;
+  padding: 3vh 2vw;
+}
