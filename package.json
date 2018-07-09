@@ -2,7 +2,7 @@
   "name": "sas-deterrence-site-generator",
   "description": "A Gatsby based static site for generating custom deterrence sites",
   "version": "1.0.0",
-  "repository" : "https://github.com/seattleagainstslavery/deterrence-generator",
+  "repository": "https://github.com/seattleagainstslavery/deterrence-generator",
   "author": "Seattle Against Slavery <info@seattleagainstslavery.org>",
   "dependencies": {
     "gatsby": "^1.9.273",

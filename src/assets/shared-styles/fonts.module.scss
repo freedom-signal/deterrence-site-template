@@ -1,7 +1,7 @@
-$path-to-fonts: "../../../assets/fonts";
+$path-to-fonts: "../../assets/fonts";
 
 @font-face {
-    font-family: 'cera-bold';
+    font-family: 'Cera-Bold';
     src: url(#{$path-to-fonts}/cera-bold-webfont.eot);
     src: url(#{$path-to-fonts}/cera-bold-webfont.eot?#iefix) format('embedded-opentype'), 
         url(#{$path-to-fonts}/cera-bold-webfont.woff2) format('woff2'), 
@@ -12,7 +12,7 @@ $path-to-fonts: "../../../assets/fonts";
 }
 
 @font-face {
-    font-family: 'cera-light';
+    font-family: 'Cera-Light';
     src: url(#{$path-to-fonts}/cera-light-webfont.eot);
     src: url(#{$path-to-fonts}/cera-light-webfont.eot?#iefix) format('embedded-opentype'), 
         url(#{$path-to-fonts}/cera-light-webfont.woff2) format('woff2'), 
