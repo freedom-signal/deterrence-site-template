@@ -1,0 +1,34 @@
+$path-to-fonts: "../../assets/fonts";
+
+@font-face {
+    font-family: 'Cera-Bold';
+    src: url(#{$path-to-fonts}/cera-bold-webfont.eot);
+    src: url(#{$path-to-fonts}/cera-bold-webfont.eot?#iefix) format('embedded-opentype'), 
+        url(#{$path-to-fonts}/cera-bold-webfont.woff2) format('woff2'), 
+        url(#{$path-to-fonts}/cera-bold-webfont.woff) format('woff'), 
+        url(#{$path-to-fonts}/cera-bold-webfont.ttf) format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera-Light';
+    src: url(#{$path-to-fonts}/cera-light-webfont.eot);
+    src: url(#{$path-to-fonts}/cera-light-webfont.eot?#iefix) format('embedded-opentype'), 
+        url(#{$path-to-fonts}/cera-light-webfont.woff2) format('woff2'), 
+        url(#{$path-to-fonts}/cera-light-webfont.woff) format('woff'), 
+        url(#{$path-to-fonts}/cera-light-webfont.ttf) format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cera-lightitalic';
+    src: url(#{$path-to-fonts}/cera-lightitalic-webfont.eot);
+    src: url(#{$path-to-fonts}/cera-lightitalic-webfont.eot?#iefix) format('embedded-opentype'), 
+        url(#{$path-to-fonts}/cera-lightitalic-webfont.woff2) format('woff2'), 
+        url(#{$path-to-fonts}/cera-lightitalic-webfont.woff) format('woff'), 
+        url(#{$path-to-fonts}/cera-lightitalic-webfont.ttf) format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
