@@ -1,7 +1,7 @@
-import Typography from 'typography';
+import Typography from 'typography'
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: '16px',
   baseLineHeight: 1.45,
   headerFontFamily: [
     'Cera-Bold',
@@ -37,6 +37,6 @@ const typography = new Typography({
       ].join(','),
     },
   }),
-});
+})
 
-export default typography;
+export default typography
