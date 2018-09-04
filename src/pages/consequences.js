@@ -36,6 +36,13 @@ const ConsequencesPage = ({ data }) => (
           />
         </p>
         <h3>You could become a liability to your company and lose your job</h3>
+        <p>
+          <Img
+            alt="Text overlay that reads: They said someone in h.r. saw my mugshot on the news. Background image of a man sitting at the bar."
+            sizes={data.newsImage.sizes}
+          />
+        </p>
+        <h4>Ready to rethink buying sex? There is help available for you now.</h4>
         </div>
     </div>  
 )
@@ -65,6 +72,11 @@ export const query = graphql`
       }
     }
     daughterImage: imageSharp(id: {regex: "/consequences4-daughter/"}){
+      sizes(maxWidth: 1240){
+        ...GatsbyImageSharpSizes
+      }
+    }
+    newsImage: imageSharp(id: {regex: "/consequences5-on-the-news/"}){
       sizes(maxWidth: 1240){
         ...GatsbyImageSharpSizes
       }
