@@ -79,13 +79,22 @@ div.bm-cross-button > button {
 /* General sidebar styles */
 .bm-menu {
   background: $blue;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  padding: 6vh 1.5em 0;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .bm-menu {
+    // scales font from 1rem (16px) at 200 width
+    // to 2rem (32px) at 400 width
+    font-size: calc(1rem + (100vw - 200px) / 12.5);
+  }
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  padding: 0.8em;
+  margin: auto;
+  padding: 0.8em 0 0;
 }
 
 /* Menu items */
