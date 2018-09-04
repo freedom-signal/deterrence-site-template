@@ -2,17 +2,42 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image';
 
+import styles from './consequences.module.scss';
+import sharedStyles from '../assets/shared-styles/shared.module.scss';
+
+
 const ConsequencesPage = ({ data }) => (
   <div>
     <Img 
       alt="Text overlay that reads: It's not worth ruining your future. Background image of a man in the backseat of a police car."
-      sizes={data.consequencesImage.sizes}
+      sizes={data.arrestedImage.sizes}
     />  
-    <h1>Consequences</h1>
-    <p>{ data.site.siteMetadata.jail_time }</p>
-    <p>{ data.site.siteMetadata.fine }</p>
-    <p>{ data.site.siteMetadata.sex_offender_registry }</p>
-  </div>
+    <div className={sharedStyles.pageWrapper}>
+        <p>Are you willing to risk the consequences of buying sex?</p>
+        <div className={sharedStyles.dividerLine}></div>
+        <h3>You might end up on the Sex Offender Registry</h3>
+        <p>
+        <Img
+          alt="Text overlay that reads: I can't go to my kid's birthday because I'm a registered sex offender. Background image of a child blowing out some candles."
+          sizes={data.childImage.sizes}  
+        /></p> 
+        <h3>Get arrested and you could spend up to 27 months in jail</h3>
+        <p>       
+        <Img
+          alt="Text overlay that reads: My whole world came crashing down, and I felt like I wanted to die. Background image of a man standing in a jail cell."  
+          sizes={data.jailImage.sizes}
+          />
+        </p>  
+        <h3>You might pay up to $5,000 in fines, but you could lose much more than that</h3>  
+        <p>
+          <Img
+            alt="Text overlay that reads: I used to be my daughter's favorite, now she won't even look at me. Background image of a mother consoling her crying daughter."
+            sizes={data.daughterImage.sizes}
+          />
+        </p>
+        <h3>You could become a liability to your company and lose your job</h3>
+        </div>
+    </div>  
 )
 
 export const query = graphql`
@@ -24,7 +49,22 @@ export const query = graphql`
         sex_offender_registry
       }
     }
-    consequencesImage: imageSharp(id: {regex: "/consequences1-arrested/"}){
+    arrestedImage: imageSharp(id: {regex: "/consequences1-arrested/"}){
+      sizes(maxWidth: 1240){
+        ...GatsbyImageSharpSizes
+      }
+    }
+    childImage: imageSharp(id: {regex: "/consequences2-sex-offender/"}){
+      sizes(maxWidth: 1240){
+        ...GatsbyImageSharpSizes
+      }
+    }
+    jailImage: imageSharp(id: {regex: "/consequences3-jail/"}){
+      sizes(maxWidth: 1240){
+        ...GatsbyImageSharpSizes
+      }
+    }
+    daughterImage: imageSharp(id: {regex: "/consequences4-daughter/"}){
       sizes(maxWidth: 1240){
         ...GatsbyImageSharpSizes
       }
