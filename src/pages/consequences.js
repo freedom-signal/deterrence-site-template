@@ -38,7 +38,7 @@ const ConsequencesPage = ({ data }) => (
         <h4>Ready to rethink buying sex? There is help available for you now.</h4>
           <a href="/"><Img 
             alt="Image of an ellipse circle with an arrow within it"
-            sizes={data.arrowImage.sizes}
+            resolutions={data.arrowImage.resolutions}
           /></a>
         <p>read the laws here</p>
         </div>
@@ -80,9 +80,9 @@ export const query = graphql`
       }
     }
     arrowImage: imageSharp(id: {regex: "/consequences6-circle-with-arrow/"}){
-      sizes(maxWidth:1240){
-        ...GatsbyImageSharpSizes
-      }
+      resolutions(width:400){
+        ...GatsbyImageSharpResolutions
+      }  
     }
   }
 `
