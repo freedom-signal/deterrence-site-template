@@ -36,6 +36,10 @@ const ConsequencesPage = ({ data }) => (
             sizes={data.newsImage.sizes}
           />
         <h4>Ready to rethink buying sex? There is help available for you now.</h4>
+          <a href="/"><Img 
+            alt="Image of an ellipse circle with an arrow within it"
+            sizes={data.arrowImage.sizes}
+          /></a>
         <p>read the laws here</p>
         </div>
     </div>  
@@ -72,6 +76,11 @@ export const query = graphql`
     }
     newsImage: imageSharp(id: {regex: "/consequences5-on-the-news/"}){
       sizes(maxWidth: 1240){
+        ...GatsbyImageSharpSizes
+      }
+    }
+    arrowImage: imageSharp(id: {regex: "/consequences6-circle-with-arrow/"}){
+      sizes(maxWidth:1240){
         ...GatsbyImageSharpSizes
       }
     }
