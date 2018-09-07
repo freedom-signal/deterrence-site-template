@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 
 import PrimaryButton from '../components/PrimaryButton';
 
+import styles from './alternatives.module.scss';
 import sharedStyles from '../assets/shared-styles/shared.module.scss';
 
 const AlternativesPage = ({ data }) => (
@@ -15,14 +16,14 @@ const AlternativesPage = ({ data }) => (
 
     <div className={sharedStyles.pageWrapper}>
       <div>
-        <h1>49%</h1>
+        <h1 className={styles.statPercentage}>49%</h1>
         <p>of sex buyers have never told anyone they bought sex</p>
       </div>
       <div>
         <p>"It's such a relief to be out of that life cycle." -former sex buyer</p>
       </div>
       <div>
-        <h1>64%</h1>
+        <h1 className={styles.statPercentage}>64%</h1>
         <p>of sex buyers in the United States said they want to stop</p>
       </div>
       <div>
