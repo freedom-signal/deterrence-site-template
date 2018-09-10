@@ -19,31 +19,34 @@ const AlternativesPage = ({ data }) => (
         <h1 className={styles.statPercentage}>49%</h1>
         <p>of sex buyers have never told anyone they bought sex</p>
       </div>
-      <div>
-        <p>"It's such a relief to be out of that life cycle." -former sex buyer</p>
+      <div className={styles.firstQuote}>
+        <p className={styles.quote}>"It's such a relief to be out of that life cycle."</p>
+        <p className={styles.signature}>-former sex buyer</p>
       </div>
       <div>
         <h1 className={styles.statPercentage}>64%</h1>
         <p>of sex buyers in the United States said they want to stop</p>
       </div>
-      <div>
-        <p>"I learned that the harms of prostitution go much deeper than what appears on the surface."- fomer sex buyer</p>
+      <div className={styles.secondQuote}>
+        <p className={styles.quote}>"I learned that the harms of prostitution go much deeper than what appears on the surface."</p>
+        <p className={styles.signature}>-fomer sex buyer</p>
       </div>
       <div>
-        <p>Make the choice without regret...contact us today</p>
+        <p className={styles.choice}>Make the choice without regret...</p>
+        <p className={styles.contactUs}>contact us today.</p>
       </div>
       <div>
         <PrimaryButton url="/">Learn More</PrimaryButton>
       </div>
-      <div className={sharedStyles.dividerLine}></div>
-      <div>
-        <p>For more information, call
-          (800) 724-7907
-          or visit the following website:
-          Seattle OPS</p>
+      <div className={styles.information}>
+        <p>For more information, call</p>
+        <p className={styles.phoneNumber}>(800) 724-7907</p>
+        <p className={styles.visitSite}>or visit the following website:</p>
+        <a href="https://seattleops.org/" className={styles.link}>Seattle OPS</a>
       </div>
-      <div>
-        <p>"Prostitution hurts everyone that's involved, but we can do something to stop it." -former sex buyer
+      <div className={styles.thirdQuote}>
+        <p className={styles.quote}>"Prostitution hurts everyone that's involved, but we can do something to stop it."</p>
+        <p className={styles.signature}>-former sex buyer
         </p>
       </div>
     </div>

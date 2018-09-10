@@ -1,5 +1,71 @@
 @import '../assets/shared-styles/colors.module.scss';
 
-.statPercentage{
-  font-size: 64px;
+.choice {
+    font-size: 22px;
+    font-weight: cera-bold;
+    margin-bottom: 0;
+}
+
+.contactUs {
+    font-size: 16px;
+}
+
+.firstQuote {
+    background: $blue;
+    color: $off-white;
+    font-size: 16px;
+    margin-bottom: 12%;
+    margin-top: 12%;
+    padding: 2em;
+    text-align: center;
+}
+
+.information {
+    font-size: 16px;
+    margin-top: 10%;
+}
+
+.link {
+    color: $blue;
+}
+
+.phoneNumber {
+    color: $blue;
+    margin-bottom: 2%;
+    margin-top: -6%;
+}
+
+.quote {
+    margin-bottom: 0;
+}
+
+.secondQuote {
+    background: $teal;
+    font-size: 16px;
+    font-family: 'Cera-Bold';
+    margin-bottom: 12%;
+    margin-top: 12%;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.signature {
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 50%;
+}
+
+.statPercentage {
+    font-size: 64px;
+}
+
+.thirdQuote {
+    background: $blue;
+    color: $off-white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.visitSite{
+  margin-bottom: 0;
 }
