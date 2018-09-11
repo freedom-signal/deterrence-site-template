@@ -24,6 +24,15 @@ gatsby develop
 
 Your site will be visible at `localhost:8000`
 
+## Test on a phone
+
+You can’t run a hot reloading environment on a phone, but you can serve your built site and access that on your phone. You’ll need to do these steps (and redo them if you change something):
+1. Run `gatsby build`
+2. Run `gatsby serve`
+3. Go to the “on your network” address on your phone, while connected to the same WiFi as the computer that is serving the page. This address stays the same over time, at least as long as you’re using the same computer and WiFi connection.
+
+See Gatsby docs under “Using the Gatsby CLI”: https://www.gatsbyjs.org/docs/
+
 ## Adding Custom Data
 
 Custom data is managed through the `gatsby-config` file and by passing in a command line flag for `REGION`.
