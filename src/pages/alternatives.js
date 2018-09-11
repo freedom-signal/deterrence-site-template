@@ -17,7 +17,7 @@ const AlternativesPage = ({ data }) => (
     <div className={sharedStyles.pageWrapper}>
       <div>
         <h1 className={styles.statPercentage}>49%</h1>
-        <p>of sex buyers have never told anyone they bought sex</p>
+        <p className={styles.statCaption}>of sex buyers have never told anyone they bought sex</p>
       </div>
       <div className={styles.firstQuote}>
         <p className={styles.quote}>"It's such a relief to be out of that life cycle."</p>
@@ -25,7 +25,7 @@ const AlternativesPage = ({ data }) => (
       </div>
       <div>
         <h1 className={styles.statPercentage}>64%</h1>
-        <p>of sex buyers in the United States said they want to stop</p>
+        <p className={styles.statCaption}>of sex buyers in the United States said they want to stop</p>
       </div>
       <div className={styles.secondQuote}>
         <p className={styles.quote}>"I learned that the harms of prostitution go much deeper than what appears on the surface."</p>
