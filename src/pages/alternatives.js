@@ -38,16 +38,15 @@ const AlternativesPage = ({ data }) => (
       <div>
         <PrimaryButton url="/">Learn More</PrimaryButton>
       </div>
-      <div className={styles.information}>
-        <p>For more information, call</p>
-        <p className={styles.phoneNumber}>(800) 724-7907</p>
+      <div>
+        <p className={styles.information}>For more information, call</p>
+        <p className={styles.link}>(800) 724-7907</p>
         <p className={styles.visitSite}>or visit the following website:</p>
         <a href="https://seattleops.org/" className={styles.link}>Seattle OPS</a>
       </div>
       <div className={styles.thirdQuote}>
         <p className={styles.quote}>"Prostitution hurts everyone that's involved, but we can do something to stop it."</p>
-        <p className={styles.signature}>-former sex buyer
-        </p>
+        <p className={styles.signature}>-former sex buyer</p>
       </div>
     </div>
   </div>
