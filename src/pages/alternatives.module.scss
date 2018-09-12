@@ -1,18 +1,15 @@
 @import '../assets/shared-styles/colors.module.scss';
 
+.blueBackground {
+    background: $blue;
+    color: $off-white;
+}
+
 .choice {
     font-size: 1.2rem;
     font-weight: cera-bold;
     margin-bottom: 0;
-}
-
-.firstQuote {
-    background: $blue;
-    color: $off-white;
-    margin-bottom: 2rem;
     margin-top: 2rem;
-    padding: 2.5em 1em 1em;
-    text-align: center;
 }
 
 .information {
@@ -26,12 +23,6 @@
 }
 
 .quote {
-    margin-bottom: 0;
-}
-
-.secondQuote {
-    background: $teal;
-    margin-bottom: 2rem;
     margin-top: 2rem;
     padding: 2.5em 1em 1em;
     text-align: center;
@@ -47,18 +38,19 @@
     margin: 1em;
 }
 
+.statement {
+    margin-bottom: 0;
+}
+
 .statPercentage {
     font-size: 4rem;
-}
-
-.thirdQuote {
-    background: $blue;
-    color: $off-white;
     margin-top: 2rem;
-    padding: 2.5em 1em 1em;
-    text-align: center;
 }
 
-.visitSite{
+.tealBackground {
+    background: $teal;
+}
+
+.visitSite {
   margin-bottom: 0;
 }

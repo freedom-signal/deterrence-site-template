@@ -6,6 +6,7 @@ import PrimaryButton from '../components/PrimaryButton';
 
 import styles from './alternatives.module.scss';
 import sharedStyles from '../assets/shared-styles/shared.module.scss';
+import classNames from 'classnames';
 
 const AlternativesPage = ({ data }) => (
   <div>
@@ -19,16 +20,16 @@ const AlternativesPage = ({ data }) => (
         <h1 className={styles.statPercentage}>49%</h1>
         <p className={styles.statCaption}>of sex buyers have never told anyone they bought sex</p>
       </div>
-      <div className={styles.firstQuote}>
-        <p className={styles.quote}>"It's such a relief to be out of that life cycle."</p>
+      <div className={classNames(styles.quote, styles.blueBackground)}>
+        <p className={styles.statement}>"It's such a relief to be out of that life cycle."</p>
         <p className={styles.signature}>-former sex buyer</p>
       </div>
       <div>
         <h1 className={styles.statPercentage}>64%</h1>
         <p className={styles.statCaption}>of sex buyers in the United States said they want to stop</p>
       </div>
-      <div className={styles.secondQuote}>
-        <p className={styles.quote}>"I learned that the harms of prostitution go much deeper than what appears on the surface."</p>
+      <div className={classNames(styles.quote, styles.tealBackground)}>
+        <p className={styles.statement}>"I learned that the harms of prostitution go much deeper than what appears on the surface."</p>
         <p className={styles.signature}>-fomer sex buyer</p>
       </div>
       <div>
@@ -44,8 +45,8 @@ const AlternativesPage = ({ data }) => (
         <p className={styles.visitSite}>or visit the following website:</p>
         <a href="https://seattleops.org/" className={styles.link}>Seattle OPS</a>
       </div>
-      <div className={styles.thirdQuote}>
-        <p className={styles.quote}>"Prostitution hurts everyone that's involved, but we can do something to stop it."</p>
+      <div className={classNames(styles.quote, styles.blueBackground)}>
+        <p className={styles.statement}>"Prostitution hurts everyone that's involved, but we can do something to stop it."</p>
         <p className={styles.signature}>-former sex buyer</p>
       </div>
     </div>
