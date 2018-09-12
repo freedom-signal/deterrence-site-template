@@ -12,7 +12,7 @@ const ConsequencesPage = ({ data }) => (
       sizes={data.arrestedImage.sizes}
     />  
     <div className={sharedStyles.pageWrapper}>
-        <p className="riskBuying">Are you willing to risk the consequences of buying sex?</p>
+        <h className="riskBuying">Are you willing to risk the consequences of buying sex?</h>
         <div className={sharedStyles.dividerLine}></div>
         <p className="offenderRegistry">You might end up on the Sex Offender Registry</p>
         <Img
@@ -35,11 +35,11 @@ const ConsequencesPage = ({ data }) => (
             sizes={data.newsImage.sizes}
           />
         <p className="rethinkBuying">Ready to rethink buying sex? There is help available for you now.</p>
-          <a href="/" className="arrow-redirect"><Img 
+          <a href="/alternatives" className="arrow-redirect"><Img 
             alt="Image of an ellipse circle with an arrow within it"
             resolutions={data.arrowImage.resolutions}
           /></a>
-        <p className="readLaws">read the laws here</p>
+        <a><p className="readLaws">read the laws here</p></a>
         </div>
     </div>  
 )
