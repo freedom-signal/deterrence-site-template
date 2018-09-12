@@ -14,7 +14,6 @@ const AlternativesPage = ({ data }) => (
       alt="Text overlay that reads: You are not alone. There is Help available. Background image of man sitting on a wall looking sad and thoughtful."
       sizes={data.alternativesImage.sizes}
     />
-
     <div className={sharedStyles.pageWrapper}>
       <div>
         <h1 className={styles.statPercentage}>49%</h1>
@@ -37,13 +36,13 @@ const AlternativesPage = ({ data }) => (
         <p className={styles.contactUs}>contact us today.</p>
       </div>
       <div>
-        <PrimaryButton url="/">Learn More</PrimaryButton>
+        <PrimaryButton url={ data.site.siteMetadata.contact_url }>Learn More</PrimaryButton>
       </div>
       <div>
         <p className={styles.information}>For more information, call</p>
-        <p className={styles.link}>(800) 724-7907</p>
+        <p className={styles.link}>{ data.site.siteMetadata.contact_phone }</p>
         <p className={styles.visitSite}>or visit the following website:</p>
-        <a href="https://seattleops.org/" className={styles.link}>Seattle OPS</a>
+        <a href={ data.site.siteMetadata.contact_url } className={styles.link}> { data.site.siteMetadata.contact_website }</a>
       </div>
       <div className={classNames(styles.quote, styles.blueBackground)}>
         <p className={styles.statement}>"Prostitution hurts everyone that's involved, but we can do something to stop it."</p>
@@ -69,5 +68,4 @@ export const query = graphql`
     }
   }
 `
-
 export default AlternativesPage
