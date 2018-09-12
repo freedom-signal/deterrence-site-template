@@ -5,6 +5,7 @@
   "repository": "https://github.com/seattleagainstslavery/deterrence-generator",
   "author": "Seattle Against Slavery <info@seattleagainstslavery.org>",
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^1.9.273",
     "gatsby-cli": "^1.1.58",
     "gatsby-image": "^1.0.54",
