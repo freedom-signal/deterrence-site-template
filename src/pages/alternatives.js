@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
@@ -6,7 +7,6 @@ import PrimaryButton from '../components/PrimaryButton';
 
 import styles from './alternatives.module.scss';
 import sharedStyles from '../assets/shared-styles/shared.module.scss';
-import classNames from 'classnames';
 
 const AlternativesPage = ({ data }) => (
   <div>
