@@ -1,5 +1,4 @@
 import React from 'react';
-import classNames from 'classnames';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
@@ -18,47 +17,47 @@ const HarmPage = ({ data }) => (
 
     <div className={sharedStyles.pageWrapper}>
       <div>
-        <p>Beatings, rapes and murder are a reality of prostitution.</p>
-        <p>You dont want to buy in to that.</p>
+        <p className={styles.firstStatement}>Beatings, rapes and murder are a reality of prostitution.</p>
+        <p className={styles.firstStatement}>You dont want to buy in to that.</p>
       </div>
       <div className={sharedStyles.dividerLine}></div>
       <div>
-        <p>85% to 95%</p>
-        <p>of those in prostitution want to escape it, but have no other options for survival</p>
+        <h1 className={styles.statPercentage}>85% to 95%</h1>
+        <p className={styles.statCaption}>of those in prostitution want to escape it, but have no other options for survival</p>
       </div>
       <div className={sharedStyles.dividerLine}></div>
       <div>
-        <p>60% to 75%</p>
-        <p>have been raped while working as a prostitute</p>
+        <h1 className={styles.statPercentage}>60% to 75%</h1>
+        <p className={styles.statCaption}>have been raped while working as a prostitute</p>
       </div>
 
       <Img
         alt="Text overlay that reads: If you're buying sex, you're fueling violence towards women like me."
-        sizes={data.secondHarmImage.sizes}
+        sizes={data.secondHarmImage.sizes} className={styles.secondImage}
       />
 
       <div>
-        <p>13% to 15%</p>
-        <p>of prostituted people reported that their buyers were abusive or violent</p>
+        <h1 className={styles.statPercentage}>13 to 15</h1>
+        <p className={styles.statCaption}>The typical age of entry into prostitution</p>
       </div>
       <div className={sharedStyles.dividerLine}></div>
       <div>
-        <p>36%</p>
-        <p>of prostituted people reported that their buyers were abusive or violent</p>
+        <h1 className={styles.statPercentage}>36%</h1>
+        <p className={styles.statCaption}>of prostituted people reported that their buyers were abusive or violent</p>
       </div>
       <div className={sharedStyles.dividerLine}></div>
       <div>
-        <p>Prostitution also impacts those who buy sex. Want to learn more?</p>
+        <p className={styles.finalStatement}>Prostitution also impacts those who buy sex. Want to learn more?</p>
       </div>
 
-      <div className={styles.icon}>
+      <div className={styles.iconCard}>
         <a href="/consequences">
           <img src={consequencesIcon} alt="An icon of handcuffs"/>
           <h2>Consequences</h2>
         </a>
       </div>
 
-      <div className={styles.icon}>
+      <div className={styles.iconCard}>
         <a href="/alternatives">
           <img src={alternativesIcon} alt="An icon of the Alt key"/>
           <h2>Alternatives</h2>

@@ -1,25 +1,46 @@
 @import '../assets/shared-styles/colors.module.scss';
 
-.icon {
-    display: flex;
-    flex-basis: 20%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 4em;
-    max-width: 450px;
+.finalStatement {
+    font-style: italic;
+    margin: 2em;
 }
 
-.icon a {
+.firstStatement {
+    font-size: 1.5rem;
+    margin-right: 1.7em;
+    margin-left: 1.7em;
+}
+
+.iconCard {
+    display: inline-block;
+    margin: 4em;
+}
+
+.iconCard a {
     text-decoration: none;
 }
 
-.icon img {
+.iconCard img {
     height: auto;
     margin-bottom: 0;
     width: 30%;
 }
 
-.icon h2 {
+.iconCard h2 {
     color: $dark-grey;
     font-size: 1rem;
+}
+
+.secondImage {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.statCaption {
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+.statPercentage {
+    font-size: 3rem;
 }
