@@ -1,41 +1,56 @@
 @import '../assets/shared-styles/colors.module.scss';
 
 .riskBuying {
-    width: 307px;
-    height: 115px;
-    font-size: 30px;
-    text-align: center;
+    display: inline-block;
+    font-family: cera-light;
+    font-size:180%;
+    width:300px;
 }
 
 .offenderRegistry {
-    width: 290px;
-    height: 60px;
+    display: inline-block;
+    font-family: cera-bold;
+    font-size: 20px;
+    width: 300px;
 }
 
 .getArrested {
-    width: 300px;
-    height: 90px;
+    display: inline-block;
+    font-family: cera-bold;
+    font-size:20px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    width: 300px;
 }
 
 .payFines {
+    display: inline-block;
+    font-family: cera-bold;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     width: 309px;
-    height: 84px;
 }
 
 .loseJob {
+    display: inline-block;
+    font-family: cera-bold;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     width: 312px;
-    height: 96px;
 }
 
 .rethinkBuying {
-    width: 315px;
-    height: 84px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: cera-bold;
+    padding-top: 20px;
+    width: 300px;
 }
 
 .readLaws {
-    width: 240px;
     height: 27px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
