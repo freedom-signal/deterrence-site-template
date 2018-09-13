@@ -39,8 +39,8 @@ const AlternativesPage = ({ data }) => (
         <PrimaryButton url={ data.site.siteMetadata.contact_url }>Learn More</PrimaryButton>
       </div>
       <div>
-        <p className={styles.information}>For more information, call</p>
-        <p className={styles.link}>{ data.site.siteMetadata.contact_phone }</p>
+        <p className={styles.information}>For more information,</p>
+        <a href="tel: { data.site.siteMetadata.contact_phone }" className={styles.link}>Click to Call</a>
         <p className={styles.visitSite}>or visit the following website:</p>
         <a href={ data.site.siteMetadata.contact_url } className={styles.link}> { data.site.siteMetadata.contact_website }</a>
       </div>
