@@ -1,0 +1,25 @@
+@import '../assets/shared-styles/colors.module.scss';
+
+.icon {
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 4em;
+    max-width: 450px;
+}
+
+.icon a {
+    text-decoration: none;
+}
+
+.icon img {
+    height: auto;
+    margin-bottom: 0;
+    width: 30%;
+}
+
+.icon h2 {
+    color: $dark-grey;
+    font-size: 1rem;
+}
