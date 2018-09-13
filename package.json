@@ -1,0 +1,37 @@
+{
+  "name": "sas-deterrence-site-generator",
+  "description": "A Gatsby based static site for generating custom deterrence sites",
+  "version": "1.0.0",
+  "repository": "https://github.com/seattleagainstslavery/deterrence-generator",
+  "author": "Seattle Against Slavery <info@seattleagainstslavery.org>",
+  "dependencies": {
+    "gatsby": "^1.9.273",
+    "gatsby-cli": "^1.1.58",
+    "gatsby-image": "^1.0.54",
+    "gatsby-link": "^1.6.45",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "1.0.19",
+    "gatsby-plugin-sharp": "^1.6.48",
+    "gatsby-plugin-typography": "^1.7.19",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-sharp": "^1.6.27",
+    "gatsby-transformer-yaml": "^1.5.18",
+    "npm": "^6.4.1",
+    "react-burger-menu": "^2.5.2",
+    "react-helmet": "^5.2.0",
+    "react-responsive": "^4.1.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.7"
+  }
+}

@@ -14,17 +14,17 @@ const ConsequencesPage = ({ data }) => (
     <div className={sharedStyles.pageWrapper}>
         <h className="riskBuying">Are you willing to risk the consequences of buying sex?</h>
         <div className={sharedStyles.dividerLine}></div>
-        <p className="offenderRegistry">You might end up on the Sex Offender Registry</p>
+        <p className="offenderRegistry">You might end up on the { data.site.siteMetadata.sex_offender_registry }</p>
         <Img
           alt="Text overlay that reads: I can't go to my kid's birthday because I'm a registered sex offender. Background image of a child blowing out some candles."
           sizes={data.childImage.sizes}  
         />
-        <p className="getArrested">Get arrested and you could spend up to 27 months in jail</p>
+        <p className="getArrested">Get arrested and you could spend up to {data.site.siteMetadata.jail_time } in jail</p>
         <Img
           alt="Text overlay that reads: My whole world came crashing down, and I felt like I wanted to die. Background image of a man standing in a jail cell."  
           sizes={data.jailImage.sizes}
           />
-        <p className="payFines">You might pay up to $5,000 in fines, but you could lose much more than that</p>  
+        <p className="payFines">You might pay up to  { data.site.siteMetadata.fine } in fines, but you could lose much more than that</p>  
           <Img
             alt="Text overlay that reads: I used to be my daughter's favorite, now she won't even look at me. Background image of a mother consoling her crying daughter."
             sizes={data.daughterImage.sizes}
