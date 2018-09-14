@@ -17,7 +17,7 @@ const ConsequencesPage = ({ data }) => (
         <p className={styles.offenderRegistry}>You might end up on the { data.site.siteMetadata.sex_offender_registry }</p>
         <Img
           alt="Text overlay that reads: I can't go to my kid's birthday because I'm a registered sex offender. Background image of a child blowing out some candles."
-          sizes={data.childImage.sizes}  
+          sizes={data.childImage.sizes}
         />
         <p className={styles.getArrested}>Get arrested and you could spend up to {data.site.siteMetadata.jail_time } in jail</p>
         <Img
