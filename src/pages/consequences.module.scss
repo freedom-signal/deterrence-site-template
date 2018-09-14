@@ -8,35 +8,36 @@
 p {
     display: inline-block;
     font-family: cera-bold;
-    font-size: 20px; 
+    font-size: 1.2em;
+    text-align: center 
 }
 
 
 .offenderRegistry {
-    text-align: center;
+    padding-bottom: 1.0em;
 }
 
 .getArrested {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 2.9em;
+    padding-bottom: 1.2em;
 }
 
 .payFines {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 2.9em;
+    padding-bottom: 1.2em;
 }
 
 .loseJob {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 2.9em;
+    padding-bottom: 1.2em;
 }
 
 .rethinkBuying {
-    padding-top: 20px;
+    padding-top: 1.2em;
 }
 
 .readLaws {
     font-family: cera-light;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 1.0em;
+    padding-bottom: 1.0em;
 }
