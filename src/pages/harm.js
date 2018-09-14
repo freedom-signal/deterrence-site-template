@@ -65,9 +65,6 @@ const HarmPage = ({ data }) => (
           <img src={consequencesIcon} alt="An icon of handcuffs"/>
           <h2>Consequences</h2>
         </a>
-      </div>
-
-      <div className={styles.iconCard}>
         <a href="/alternatives">
           <img src={alternativesIcon} alt="An icon of the Alt key"/>
           <h2>Alternatives</h2>

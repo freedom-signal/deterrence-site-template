@@ -12,18 +12,20 @@
 }
 
 .iconCard {
-    display: inline-block;
-    margin: 4em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .iconCard a {
     text-decoration: none;
+    margin-bottom: 1.5em;
 }
 
 .iconCard img {
     height: auto;
     margin-bottom: 0;
-    width: 30%;
+    width: 35%;
 }
 
 .iconCard h2 {
