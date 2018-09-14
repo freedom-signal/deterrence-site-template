@@ -41,6 +41,18 @@
     margin-left: 4em;
 }
 
+.statDiv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 .statPercentage {
     font-size: 3rem;
+    padding-left: .3em;
+    padding-right: .3em;
+}
+
+.toWord {
+    font-size: 1.5rem;
 }

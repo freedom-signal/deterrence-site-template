@@ -21,13 +21,21 @@ const HarmPage = ({ data }) => (
         <p className={styles.firstStatement}>You dont want to buy in to that.</p>
       </div>
       <div className={sharedStyles.dividerLine}></div>
+      <div className={styles.statDiv}>
+        <h1 className={styles.statPercentage}>85%</h1>
+        <p className={styles.toWord}>to</p>
+        <h1 className={styles.statPercentage}>90%</h1>
+      </div>
       <div>
-        <h1 className={styles.statPercentage}>85% to 95%</h1>
         <p className={styles.statCaption}>of those in prostitution want to escape it, but have no other options for survival</p>
       </div>
       <div className={sharedStyles.dividerLine}></div>
+      <div className={styles.statDiv}>
+        <h1 className={styles.statPercentage}>60%</h1>
+        <p className={styles.toWord}>to</p>
+        <h1 className={styles.statPercentage}>75%</h1>
+      </div>
       <div>
-        <h1 className={styles.statPercentage}>60% to 75%</h1>
         <p className={styles.statCaption}>have been raped while working as a prostitute</p>
       </div>
 
@@ -36,10 +44,12 @@ const HarmPage = ({ data }) => (
         sizes={data.secondHarmImage.sizes} className={styles.secondImage}
       />
 
-      <div>
-        <h1 className={styles.statPercentage}>13 to 15</h1>
-        <p className={styles.statCaption}>The typical age of entry into prostitution</p>
+      <div className={styles.statDiv}>
+        <h1 className={styles.statPercentage}>13</h1>
+        <p className={styles.toWord}>to</p>
+        <h1 className={styles.statPercentage}>15</h1>
       </div>
+      <p className={styles.statCaption}>The typical age of entry into prostitution</p>
       <div className={sharedStyles.dividerLine}></div>
       <div>
         <h1 className={styles.statPercentage}>36%</h1>
