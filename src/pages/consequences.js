@@ -14,6 +14,7 @@ const ConsequencesPage = ({ data }) => (
     <div className={sharedStyles.pageWrapper}>
         <h className={styles.riskBuying}>Are you willing to risk the consequences of buying sex?</h>
         <div className={sharedStyles.dividerLine}></div>
+        <div className={styles.textWrapper}>
         <p className={styles.offenderRegistry}>You might end up on the { data.site.siteMetadata.sex_offender_registry }</p>
         <Img
           alt="Text overlay that reads: I can't go to my kid's birthday because I'm a registered sex offender. Background image of a child blowing out some candles."
@@ -39,8 +40,9 @@ const ConsequencesPage = ({ data }) => (
             alt="Image of an ellipse circle with an arrow within it"
             resolutions={data.arrowImage.resolutions}
           /></a>
+        </div>  
         <a><p className={styles.readLaws}>read the laws here</p></a>
-        </div>
+        </div> 
     </div>  
 )
 

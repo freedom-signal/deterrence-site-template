@@ -3,41 +3,44 @@
 .riskBuying {
     display: inline-block;
     font-family: cera-light;
-    font-size:180%;
-}
-p {
-    display: inline-block;
-    font-family: cera-bold;
-    font-size: 1.2em;
-    text-align: center 
+    font-size:1.8rem;
+    margin: 0.1em 1em 0.1em 1em;
 }
 
+.textWrapper p {
+    display: inline-block;
+    font-family: cera-bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0.1em 2em 0.1em 2em;
+}
 
 .offenderRegistry {
     padding-bottom: 1.0em;
 }
 
 .getArrested {
-    padding-top: 2.9em;
-    padding-bottom: 1.2em;
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
+
 }
 
 .payFines {
-    padding-top: 2.9em;
-    padding-bottom: 1.2em;
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
 }
 
 .loseJob {
-    padding-top: 2.9em;
-    padding-bottom: 1.2em;
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
 }
 
 .rethinkBuying {
     padding-top: 1.2em;
+    padding-bottom: 0.8em;
 }
 
 .readLaws {
     font-family: cera-light;
     padding-top: 1.0em;
-    padding-bottom: 1.0em;
 }
