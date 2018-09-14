@@ -1,0 +1,57 @@
+@import '../assets/shared-styles/colors.module.scss';
+
+.blueBackground {
+    background: $blue;
+    color: $off-white;
+}
+
+.choice {
+    font-size: 1.2rem;
+    font-weight: cera-bold;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.information {
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.link {
+    color: $blue;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.quote {
+    margin-top: 2rem;
+    padding: 2.5em 1em 1em;
+    text-align: center;
+}
+
+.signature {
+    font-size: 0.68rem;
+    font-style: italic;
+    margin-left: 10rem;
+}
+
+.statCaption {
+    margin: 1em;
+}
+
+.statement {
+    margin-bottom: 0;
+}
+
+.statPercentage {
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+
+.tealBackground {
+    background: $teal;
+}
+
+.visitSite {
+  margin-bottom: 0;
+}
