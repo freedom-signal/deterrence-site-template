@@ -18,7 +18,7 @@ const HarmPage = ({ data }) => (
     <div className={sharedStyles.pageWrapper}>
       <div>
         <p className={styles.firstStatement}>Beatings, rapes and murder are a reality of prostitution.</p>
-        <p className={styles.firstStatement}>You dont want to buy in to that.</p>
+        <p className={styles.firstStatement}>You don't want to buy into that.</p>
       </div>
       <div className={sharedStyles.dividerLine}></div>
       <div className={styles.statDiv}>
