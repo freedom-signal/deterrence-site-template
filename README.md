@@ -51,7 +51,7 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 * [x] Find content images
 * [x] Learn how to use a data file to pull data for different components
 * [x] Image optimization
-* [ ] Harm page content
+* [x] Harm page content
 * [x] Alternatives page content
 * [ ] Set up zapier webhook for emails (for contact page)
 * [x] Contact page content

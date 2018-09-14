@@ -12,12 +12,12 @@ import contactIcon from '../assets/images/contact-icon.png';
 const IndexPage = ({ data }) => (
   <div className={styles.pageContainer}>
     <div className={styles.intro}>
-      <h1>{data.site.siteMetadata.title}</h1>
+      <h1 className={styles.pageTitle}>{data.site.siteMetadata.title}</h1>
       <p className={styles.tagline}>It's not as harmless as you think.</p>
       <div className={sharedStyles.dividerLine}></div>
       <p className={styles.siteDescription}>{data.site.siteMetadata.description}</p>
     </div>
-    
+
     <div className={styles.iconsArea}>
 
       <div className={styles.iconCard}>
@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => (
         <a href="/alternatives">
           <img src={alternativesIcon} alt="An icon of the Alt key"/>
 
-          <h2 className={styles.cardTitle}>Alternatives</h2>     
+          <h2 className={styles.cardTitle}>Alternatives</h2>
           <p className={styles.cardDescription}>Make the choice without regret.</p>
         </a>
       </div>
@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => (
         <a href="/contact">
           <img src={contactIcon} alt="An icon of an envelope"/>
 
-          <h2 className={styles.cardTitle}>Contact</h2>      
+          <h2 className={styles.cardTitle}>Contact</h2>
           <p className={styles.cardDescription}>Get help from men who understand this experience.</p>
         </a>
       </div>
