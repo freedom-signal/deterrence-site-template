@@ -4,53 +4,43 @@
     display: inline-block;
     font-family: cera-light;
     font-size:180%;
-    width:300px;
 }
-
-.offenderRegistry {
+p {
     display: inline-block;
     font-family: cera-bold;
-    font-size: 20px;
-    width: 300px;
+    font-size: 20px; 
+}
+
+
+.offenderRegistry {
+    text-align: center;
 }
 
 .getArrested {
-    display: inline-block;
-    font-family: cera-bold;
-    font-size:20px;
     padding-top: 50px;
     padding-bottom: 20px;
     width: 300px;
 }
 
 .payFines {
-    display: inline-block;
-    font-family: cera-bold;
-    font-size: 20px;
     padding-top: 50px;
     padding-bottom: 20px;
     width: 309px;
 }
 
 .loseJob {
-    display: inline-block;
-    font-family: cera-bold;
-    font-size: 20px;
     padding-top: 40px;
     padding-bottom: 20px;
     width: 312px;
 }
 
 .rethinkBuying {
-    display: inline-block;
-    font-size: 20px;
-    font-family: cera-bold;
     padding-top: 20px;
     width: 300px;
 }
 
 .readLaws {
-    height: 27px;
+    font-family: cera-light;
     padding-top: 10px;
     padding-bottom: 20px;
 }
