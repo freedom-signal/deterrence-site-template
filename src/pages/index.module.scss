@@ -15,7 +15,7 @@
 
 @media only screen  and (max-width : 1224px) {
   .pageContainer {
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 1fr;
   }
 }
 
@@ -90,6 +90,10 @@
 
 .iconCard p.cardDescription {
   flex-basis: 40%;
+}
+
+.intro {
+  margin-bottom: 0;
 }
 
 .pageTitle {

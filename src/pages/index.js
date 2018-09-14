@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
   <div className={styles.pageContainer}>
     <div className={styles.intro}>
       <h1 className={styles.pageTitle}>{data.site.siteMetadata.title}</h1>
-      <p className={styles.tagline}>It's not as harmless as you think.</p>
+      <p className={styles.tagline}>Its not as harmless as you think.</p>
       <div className={sharedStyles.dividerLine}></div>
       <p className={styles.siteDescription}>{data.site.siteMetadata.description}</p>
     </div>
