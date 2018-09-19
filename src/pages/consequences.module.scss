@@ -1,0 +1,45 @@
+@import '../assets/shared-styles/colors.module.scss';
+
+.riskBuying {
+  display: inline-block;
+  font-family: cera-light;
+  font-size: 1.8rem;
+  margin: 0.1em 1em 0.1em 1em;
+}
+
+p {
+  display: inline-block;
+  font-family: cera-bold;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0.1em 2em 0.1em 2em;
+}
+
+.offenderRegistry {
+  padding-bottom: 1em;
+}
+
+.getArrested {
+  padding-top: 2.2em;
+  padding-bottom: 2.2em;
+}
+
+.payFines {
+  padding-top: 2.2em;
+  padding-bottom: 2.2em;
+}
+
+.loseJob {
+  padding-top: 2.2em;
+  padding-bottom: 2.2em;
+}
+
+.rethinkBuying {
+  padding-top: 1.2em;
+  padding-bottom: 0.8em;
+}
+
+.readLaws {
+  font-family: cera-light;
+  padding-top: 1em;
+}
