@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 let regionalConfig = process.env.REGION;
 
 if (!regionalConfig) {
@@ -34,7 +36,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `img`,
-        path: `${__dirname}/src/assets/images/`
+        path: path.join(__dirname, `src`, `assets/images`)
       }
     },
   ]

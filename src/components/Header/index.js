@@ -1,6 +1,5 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
-import Menu from 'react-burger-menu/lib/menus/slide';
 
 import styles from './index.module.scss';
 import DesktopMenu from '../DesktopMenu/index.js'
