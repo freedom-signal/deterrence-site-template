@@ -35,7 +35,6 @@ class MobileMenu extends Component {
         <Link
           to="/"
           onClick={() => this.closeMenu()}
-          exact = 'true'
           activeStyle={{ textDecoration: 'underline overline' }}
         >
           HOME
@@ -43,7 +42,6 @@ class MobileMenu extends Component {
         <Link
           to="/harm"
           onClick={() => this.closeMenu()}
-          exact = 'true'
           activeStyle={{ textDecoration: 'underline overline' }}
         >
           HARM
@@ -51,7 +49,6 @@ class MobileMenu extends Component {
         <Link
           to="/consequences"
           onClick={() => this.closeMenu()}
-          exact = 'true'
           activeStyle={{ textDecoration: 'underline overline' }}
         >
           CONSEQUENCES
@@ -59,7 +56,6 @@ class MobileMenu extends Component {
         <Link
           to="/alternatives"
           onClick={() => this.closeMenu()}
-          exact = 'true'
           activeStyle={{ textDecoration: 'underline overline' }}
         >
           ALTERNATIVES
@@ -67,7 +63,6 @@ class MobileMenu extends Component {
         <Link
           to="/contact"
           onClick={() => this.closeMenu()}
-          exact = 'true'
           activeStyle={{ textDecoration: 'underline overline' }}
         >
           CONTACT

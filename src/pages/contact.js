@@ -2,9 +2,8 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
-import PrimaryButton from '../components/PrimaryButton'
+import ContactForm from '../components/ContactForm'
 
-import styles from './contact.module.scss'
 import sharedStyles from '../assets/shared-styles/shared.module.scss'
  
 export default ({ data }) => (
@@ -12,7 +11,7 @@ export default ({ data }) => (
     <div>
       <Img
         alt="Text overlay that reads: You are not alone. There is Help available. Background image of man sitting on a wall looking sad and thoughtful."
-        fluid={data.heroImage.sizes}
+        fluid={data.heroImage.childImageSharp.fluid}
       />
 
       <div className={sharedStyles.pageWrapper}>
@@ -25,18 +24,7 @@ export default ({ data }) => (
           </p>
         </div>
 
-        <form>
-          <div className={styles.contactInput}>
-            <i className={styles.inputIcon} />
-            <input
-              className={styles.emailField}
-              type="email"
-              placeholder="your email address"
-            />
-          </div>
-
-          <PrimaryButton url="/">Get Confidential Help</PrimaryButton>
-        </form>
+        <ContactForm />
       </div>
     </div>
   </Layout>
@@ -44,10 +32,8 @@ export default ({ data }) => (
 
 export const query = graphql`
   query ContactQuery {
-    heroImage: imageSharp(id: { regex: "/contact1/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
-      }
+    heroImage: file(relativePath: { eq: "contact.jpg" }) {
+      ...fluidImage
     }
   }
 `
