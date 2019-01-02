@@ -63,7 +63,7 @@ export default ({ data }) => (
           />
         </a>
         
-        <a>
+        <a href={data.site.siteMetadata.law_link}>
           <p className={styles.readLaws}>read the laws here</p>
         </a>
       </div>
@@ -78,6 +78,7 @@ export const query = graphql`
         jail_time
         fine
         sex_offender_registry
+        law_link
       }
     }
 
