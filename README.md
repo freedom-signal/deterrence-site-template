@@ -53,14 +53,14 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 * [x] Image optimization
 * [x] Harm page content
 * [x] Alternatives page content
-* [ ] Set up zapier webhook for emails (for contact page)
+* [x] Set up zapier webhook for emails (for contact page)
 * [x] Contact page content
 * [x] Create mobile menu
 * [x] Menu should highlight the current page
 * [ ] Implement CSS Grid / flexbox layouts on all pages
 * [ ] Back to top link after scrolling on mobile
 * [x] Update `package.json` name, description, author, etc.
-* [ ] Set up config to generate the site into a new folder specifying a config file
+* [ ] Set up config to generate the site into a new folder specifying a config file (blocked by gatsby)
 * [ ] Develop deployment strategy
 * [ ] Accessibility audit
   * increase contrast in header
