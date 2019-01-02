@@ -5,8 +5,11 @@ import PrimaryButton from '../PrimaryButton'
 import styles from './index.module.scss'
 
 export default class ContactForm extends React.Component {
-  state = {
-    email: '',
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: ''
+    }
   }
 
   handleInputChange = event => {
@@ -21,13 +24,10 @@ export default class ContactForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    fetch(`https://hooks.zapier.com/hooks/catch/3064004/a4ds27/`, {
+    fetch(this.props.webhook, {
       method: 'POST',
-      body: JSON.stringify(this.state)
-
-    }).then(r => r.json());
-
-    // console.log(r)
+      body: JSON.stringify(this.state),
+    })
   }
 
   render() {

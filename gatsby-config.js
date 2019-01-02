@@ -20,7 +20,8 @@ module.exports = {
     contact_website: process.env.CONTACT_WEBSITE,
     contact_url: process.env.CONTACT_URL,
     contact_phone: process.env.CONTACT_PHONE,
-    law_link: process.env.LAW_LINK
+    law_link: process.env.LAW_LINK,
+    zapier_webhook: process.env.ZAPIER_WEBHOOK
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

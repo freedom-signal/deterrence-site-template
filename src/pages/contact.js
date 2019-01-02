@@ -24,7 +24,7 @@ export default ({ data }) => (
           </p>
         </div>
 
-        <ContactForm />
+        <ContactForm webhook={data.site.siteMetadata.zapier_webhook} />
       </div>
     </div>
   </Layout>
@@ -32,6 +32,11 @@ export default ({ data }) => (
 
 export const query = graphql`
   query ContactQuery {
+    site {
+      siteMetadata {
+        zapier_webhook
+      }
+    }
     heroImage: file(relativePath: { eq: "contact.jpg" }) {
       ...fluidImage
     }
