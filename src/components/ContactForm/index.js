@@ -6,9 +6,9 @@ import styles from './index.module.scss'
 
 export default class ContactForm extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      email: ''
+      email: '',
     }
   }
 
@@ -33,9 +33,10 @@ export default class ContactForm extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <div className={styles.contactInput}>
-            <i className={styles.inputIcon} />
+        <form onSubmit={this.handleSubmit} className={styles.form}>
+          <label>email</label>
+          <div className={styles.inputWrapper}>
+            <i className={styles.envelope} />
             <input
               className={styles.emailField}
               name="email"
@@ -44,11 +45,9 @@ export default class ContactForm extends React.Component {
               type="email"
               value={this.state.email}
             />
-
-            <PrimaryButton type="submit">
-              Request Confidential Help
-            </PrimaryButton>
           </div>
+
+          <PrimaryButton type="submit">Request Confidential Help</PrimaryButton>
         </form>
       </div>
     )

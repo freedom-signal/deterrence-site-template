@@ -2,13 +2,26 @@
 @import './fonts.module.scss';
 
 .dividerLine {
-    border: 0.5px solid $medium-grey;
-    height: 0px;
-    margin: 1.45rem auto;
-    width: 150px;
+  border: 0.5px solid $medium-grey;
+  height: 0px;
+  margin: 1.45rem auto;
+  width: 150px;
 }
 
 .pageWrapper {
-    text-align: center;
-    margin-top: 1.45rem;
+  text-align: center;
+  margin: 1.45rem auto 0;
+  width: 80%;
+}
+
+@mixin visuallyHidden {
+  // Do not display, but remain accessible by screen readers
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
