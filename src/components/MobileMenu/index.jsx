@@ -37,35 +37,35 @@ class MobileMenu extends Component {
           onClick={() => this.closeMenu()}
           activeStyle={{ textDecoration: 'underline overline' }}
         >
-          HOME
+          Home
         </Link>
         <Link
           to="/harm"
           onClick={() => this.closeMenu()}
           activeStyle={{ textDecoration: 'underline overline' }}
         >
-          HARM
+          Harm
         </Link>
         <Link
           to="/consequences"
           onClick={() => this.closeMenu()}
           activeStyle={{ textDecoration: 'underline overline' }}
         >
-          CONSEQUENCES
+          Consequences
         </Link>
         <Link
           to="/alternatives"
           onClick={() => this.closeMenu()}
           activeStyle={{ textDecoration: 'underline overline' }}
         >
-          ALTERNATIVES
+          Alternatives
         </Link>
         <Link
-          to="/contact"
+          to="/request-help"
           onClick={() => this.closeMenu()}
           activeStyle={{ textDecoration: 'underline overline' }}
         >
-          CONTACT
+          Request Help
         </Link>
       </Menu>
     )

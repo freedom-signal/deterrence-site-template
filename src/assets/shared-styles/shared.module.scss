@@ -1,5 +1,4 @@
 @import './colors.module.scss';
-@import './fonts.module.scss';
 
 .dividerLine {
   border: 0.5px solid $medium-grey;
@@ -8,10 +7,10 @@
   width: 150px;
 }
 
-.pageWrapper {
-  text-align: center;
-  margin: 1.45rem auto 0;
+.contentWrapper {
   width: 80%;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 @mixin visuallyHidden {

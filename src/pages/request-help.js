@@ -2,7 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
-import ContactForm from '../components/ContactForm'
+import GetHelpForm from '../components/GetHelpForm'
 
 import sharedStyles from '../assets/shared-styles/shared.module.scss'
  
@@ -14,7 +14,7 @@ export default ({ data }) => (
         fluid={data.heroImage.childImageSharp.fluid}
       />
 
-      <div className={sharedStyles.pageWrapper}>
+      <div className={sharedStyles.contentWrapper}>
         <div>
           <h1>Want to talk?</h1>
           <div className={sharedStyles.dividerLine} />
@@ -24,7 +24,7 @@ export default ({ data }) => (
           </p>
         </div>
 
-        <ContactForm webhook={data.site.siteMetadata.zapier_webhook} />
+        <GetHelpForm webhook={data.site.siteMetadata.zapier_webhook} />
       </div>
     </div>
   </Layout>

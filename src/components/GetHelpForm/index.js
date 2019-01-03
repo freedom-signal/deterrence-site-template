@@ -4,7 +4,7 @@ import PrimaryButton from '../PrimaryButton'
 
 import styles from './index.module.scss'
 
-export default class ContactForm extends React.Component {
+export default class GetHelpForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {

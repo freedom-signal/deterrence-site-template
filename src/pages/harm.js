@@ -16,7 +16,7 @@ export default ({ data }) => (
         fluid={data.harmImage.childImageSharp.fluid}
       />
 
-      <div className={sharedStyles.pageWrapper}>
+      <div className={sharedStyles.contentWrapper}>
         <div>
           <p className={styles.firstStatement}>
             Beatings, rapes and murder are a reality of prostitution.
@@ -48,13 +48,15 @@ export default ({ data }) => (
             have been raped while working as a prostitute
           </p>
         </div>
+      </div>
 
-        <Img
-          alt="Text overlay that reads: If you're buying sex, you're fueling violence towards women like me."
-          fluid={data.secondHarmImage.childImageSharp.fluid}
-          className={styles.secondImage}
-        />
+      <Img
+        alt="Text overlay that reads: If you're buying sex, you're fueling violence towards women like me."
+        fluid={data.secondHarmImage.childImageSharp.fluid}
+        className={styles.secondImage}
+      />
 
+      <div className={sharedStyles.contentWrapper}>
         <div className={styles.statDiv}>
           <h1 className={styles.statPercentage}>13</h1>
           <p className={styles.toWord}>to</p>
@@ -97,9 +99,9 @@ export const query = graphql`
   query HarmQuery {
     harmImage: file(relativePath: { eq: "harm1-beaten.png" }) {
       ...fluidImage
-    }  
+    }
     secondHarmImage: file(relativePath: { eq: "harm2-fueling-violence.png" }) {
       ...fluidImage
-    }   
+    }
   }
 `
