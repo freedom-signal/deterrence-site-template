@@ -56,10 +56,10 @@ export default ({ data }) => (
         </div>
 
         <div className={styles.iconCard}>
-          <a href="/contact">
+          <a href="/request-help">
             <img src={contactIcon} alt="An icon of an envelope" />
 
-            <h2 className={styles.cardTitle}>Contact</h2>
+            <h2 className={styles.cardTitle}>Request Help</h2>
             <p className={styles.cardDescription}>
               Get help from men who understand this experience.
             </p>

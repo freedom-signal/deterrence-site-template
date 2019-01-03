@@ -17,9 +17,11 @@ module.exports = {
     jail_time: process.env.JAIL_TIME,
     fine: process.env.FINE,
     sex_offender_registry: process.env.SEX_OFFENDER_REGISTRY,
-    contact_website: process.env.CONTACT_WEBSITE,
-    contact_url: process.env.CONTACT_URL,
-    contact_phone: process.env.CONTACT_PHONE,
+    alternatives_website: process.env.ALTERNATIVES_WEBSITE,
+    alternatives_url: process.env.ALTERNATIVES_URL,
+    alternatives_phone: process.env.ALTERNATIVES_PHONE,
+    law_link: process.env.LAW_LINK,
+    zapier_webhook: process.env.ZAPIER_WEBHOOK
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

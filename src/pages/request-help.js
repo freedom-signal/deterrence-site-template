@@ -2,9 +2,8 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
-import PrimaryButton from '../components/PrimaryButton'
+import GetHelpForm from '../components/GetHelpForm'
 
-import styles from './contact.module.scss'
 import sharedStyles from '../assets/shared-styles/shared.module.scss'
  
 export default ({ data }) => (
@@ -12,10 +11,10 @@ export default ({ data }) => (
     <div>
       <Img
         alt="Text overlay that reads: You are not alone. There is Help available. Background image of man sitting on a wall looking sad and thoughtful."
-        fluid={data.heroImage.sizes}
+        fluid={data.heroImage.childImageSharp.fluid}
       />
 
-      <div className={sharedStyles.pageWrapper}>
+      <div className={sharedStyles.contentWrapper}>
         <div>
           <h1>Want to talk?</h1>
           <div className={sharedStyles.dividerLine} />
@@ -25,18 +24,7 @@ export default ({ data }) => (
           </p>
         </div>
 
-        <form>
-          <div className={styles.contactInput}>
-            <i className={styles.inputIcon} />
-            <input
-              className={styles.emailField}
-              type="email"
-              placeholder="your email address"
-            />
-          </div>
-
-          <PrimaryButton url="/">Get Confidential Help</PrimaryButton>
-        </form>
+        <GetHelpForm webhook={data.site.siteMetadata.zapier_webhook} />
       </div>
     </div>
   </Layout>
@@ -44,10 +32,13 @@ export default ({ data }) => (
 
 export const query = graphql`
   query ContactQuery {
-    heroImage: imageSharp(id: { regex: "/contact1/" }) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
+    site {
+      siteMetadata {
+        zapier_webhook
       }
+    }
+    heroImage: file(relativePath: { eq: "contact.jpg" }) {
+      ...fluidImage
     }
   }
 `

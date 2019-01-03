@@ -1,0 +1,39 @@
+@import '../../assets/shared-styles/shared.module.scss';
+
+.form {
+  max-width: 300px;
+  margin: 1rem auto;
+
+  label {
+    @include visuallyHidden;
+  }
+
+  .inputWrapper {
+    border: 0.75px solid $light-grey;
+    border-radius: 15px;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .envelope {
+    width: 15px;
+    height: 18px;
+    display: inline-block;
+    background: url('../../assets/images/contact-icon.png');
+    background-size: contain;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+  }
+
+  .emailField {
+    border: none;
+    height: 95%;
+    width: 85%;
+    float: right;
+    padding: 0 0.25rem;
+    margin-right: 0.5rem;
+    margin-top: 0.05rem;
+  }
+}
