@@ -50,25 +50,3 @@ Before deploying the site into the new static site storage account you created, 
 You will also need to set up new zaps to handle the request help feature. Contact Liz to complete this step.
 
 Finally, use the new storage entrypoint URL to update DNS records to point to the site.
-
-# To do:
-
-* [x] Implement CSS Grid for homepage
-* [x] Find content images
-* [x] Learn how to use a data file to pull data for different components
-* [x] Image optimization
-* [x] Harm page content
-* [x] Alternatives page content
-* [x] Set up zapier webhook for emails (for contact page)
-* [x] Contact page content
-* [x] Create mobile menu
-* [x] Menu should highlight the current page
-* [ ] Implement CSS Grid / flexbox layouts on all pages
-* [ ] Back to top link after scrolling on mobile
-* [x] Update `package.json` name, description, author, etc.
-* [ ] Set up config to generate the site into a new folder specifying a config file (blocked by gatsby)
-* [ ] Develop deployment strategy
-* [ ] Accessibility audit
-  * increase contrast in header
-* [ ] Performance audit
-* [ ] Update readme
