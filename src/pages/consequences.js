@@ -64,20 +64,21 @@ export default ({ data }) => (
         alt="Text overlay that reads: They said someone in h.r. saw my mugshot on the news. Background image of a man sitting at the bar."
         fluid={data.newsImage.childImageSharp.fluid}
       />
+
       <div className={styles.content}>
         <p>
           Ready to rethink buying sex? There is help available for you now.
         </p>
         
-        <a href="/alternatives" className="arrow-redirect">
+        <a href="/alternatives" className={styles.arrowIcon}>
           <Img
             alt="Image of an ellipse circle with an arrow within it"
             fluid={data.arrowImage.childImageSharp.fluid}
           />
         </a>
         
-        <a href={data.site.siteMetadata.law_link}>
-          <p className={styles.readLaws}>read the laws here</p>
+        <a href={data.site.siteMetadata.law_link} className={styles.readLaws}>
+          read the laws here
         </a>
       </div>
     </div>
