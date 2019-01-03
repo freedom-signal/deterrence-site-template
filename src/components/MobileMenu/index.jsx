@@ -4,7 +4,7 @@ import Menu from 'react-burger-menu/lib/menus/slide'
 
 import './index.scss'
 
-class MobileMenu extends Component {
+export default class MobileMenu extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -18,7 +18,6 @@ class MobileMenu extends Component {
     this.setState({ menuOpen: state.isOpen })
   }
 
-  // This is used to close the menu, e.g. when a user clicks a menu item
   closeMenu() {
     this.setState({ menuOpen: false })
   }
@@ -35,35 +34,35 @@ class MobileMenu extends Component {
         <Link
           to="/"
           onClick={() => this.closeMenu()}
-          activeStyle={{ textDecoration: 'underline overline' }}
+          activeStyle={{ textDecoration: 'underline' }}
         >
           Home
         </Link>
         <Link
           to="/harm"
           onClick={() => this.closeMenu()}
-          activeStyle={{ textDecoration: 'underline overline' }}
+          activeStyle={{ textDecoration: 'underline' }}
         >
           Harm
         </Link>
         <Link
           to="/consequences"
           onClick={() => this.closeMenu()}
-          activeStyle={{ textDecoration: 'underline overline' }}
+          activeStyle={{ textDecoration: 'underline' }}
         >
           Consequences
         </Link>
         <Link
           to="/alternatives"
           onClick={() => this.closeMenu()}
-          activeStyle={{ textDecoration: 'underline overline' }}
+          activeStyle={{ textDecoration: 'underline' }}
         >
           Alternatives
         </Link>
         <Link
           to="/request-help"
           onClick={() => this.closeMenu()}
-          activeStyle={{ textDecoration: 'underline overline' }}
+          activeStyle={{ textDecoration: 'underline' }}
         >
           Request Help
         </Link>
@@ -71,5 +70,3 @@ class MobileMenu extends Component {
     )
   }
 }
-
-export default MobileMenu
