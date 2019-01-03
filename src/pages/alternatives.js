@@ -49,21 +49,21 @@ export default ({ data }) => (
         <p className={styles.choice}>Make the choice without regret...</p>
         <p className={styles.contactUs}>contact us today.</p>
 
-        <PrimaryButton url={data.site.siteMetadata.contact_url}>
+        <PrimaryButton url={data.site.siteMetadata.alternatives_url}>
           Learn More
         </PrimaryButton>
 
         <p className={styles.information}>For more information, </p>
         <a
-          href="tel: { data.site.siteMetadata.contact_phone }"
+          href="tel: { data.site.siteMetadata.alternatives_phone }"
           className={styles.link}
         >
           Click to Call
         </a>
         <p className={styles.visitSite}>or visit the following website:</p>
-        <a href={data.site.siteMetadata.contact_url} className={styles.link}>
+        <a href={data.site.siteMetadata.alternatives_url} className={styles.link}>
           {' '}
-          {data.site.siteMetadata.contact_website}
+          {data.site.siteMetadata.alternatives_website}
         </a>
       </div>
 
@@ -82,9 +82,9 @@ export const query = graphql`
   query AlternativesQuery {
     site {
       siteMetadata {
-        contact_website
-        contact_url
-        contact_phone
+        alternatives_website
+        alternatives_url
+        alternatives_phone
       }
     }
 
