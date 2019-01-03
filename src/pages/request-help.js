@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import GetHelpForm from '../components/GetHelpForm'

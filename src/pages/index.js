@@ -1,8 +1,10 @@
 import React from 'react'
-import styles from './index.module.scss'
-import sharedStyles from '../assets/shared-styles/shared.module.scss'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+
+import styles from './index.module.scss'
+import sharedStyles from '../assets/shared-styles/shared.module.scss'
 
 import harmIcon from '../assets/images/harm-icon.png'
 import consequencesIcon from '../assets/images/consequences-icon.png'
