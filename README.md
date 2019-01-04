@@ -37,7 +37,7 @@ See Gatsby docs under “Using the Gatsby CLI”: https://www.gatsbyjs.org/docs/
 
 Custom data is managed through the `gatsby-config` file and by passing in a command line flag for `REGION`.
 
-To add a new region, make a duplicate of the `.env.default` file in the `regional_config` folder and rename it to `.env.NEW_REGION_NAME`. Then replace the contents with the values for your region.
+To add a new region, make a duplicate of the `.env.example` file in the `regional_config` folder and rename it to `.env.NEW_REGION_NAME`. Then replace the contents with the values for your region.
 
 Stop gatsby and restart with your new region environment by running: `REGION=NEW_REGION_NAME gatsby develop`. You will need to restart whenever you switch regions or when you make changes to your env file.
 
