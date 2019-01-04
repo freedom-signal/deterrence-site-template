@@ -43,26 +43,10 @@ Stop gatsby and restart with your new region environment by running: `REGION=NEW
 
 ## Deploying
 
-:rotating_light: not yet implemented :rotating_light:
+To deploy the site, first follow [these instructions](https://www.gatsbyjs.org/blog/2018-11-05-deploying-gatsby-to-azure/) on setting up a new storage account for the site in Azure.
 
-# To do:
+Before deploying the site into the new static site storage account you created, be sure to update the .ENV file with data from the customer.
 
-* [x] Implement CSS Grid for homepage
-* [x] Find content images
-* [x] Learn how to use a data file to pull data for different components
-* [x] Image optimization
-* [x] Harm page content
-* [x] Alternatives page content
-* [x] Set up zapier webhook for emails (for contact page)
-* [x] Contact page content
-* [x] Create mobile menu
-* [x] Menu should highlight the current page
-* [ ] Implement CSS Grid / flexbox layouts on all pages
-* [ ] Back to top link after scrolling on mobile
-* [x] Update `package.json` name, description, author, etc.
-* [ ] Set up config to generate the site into a new folder specifying a config file (blocked by gatsby)
-* [ ] Develop deployment strategy
-* [ ] Accessibility audit
-  * increase contrast in header
-* [ ] Performance audit
-* [ ] Update readme
+You will also need to set up new zaps to handle the request help feature. Contact Liz to complete this step.
+
+Finally, use the new storage entrypoint URL to update DNS records to point to the site.
