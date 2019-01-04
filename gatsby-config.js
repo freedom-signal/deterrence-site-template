@@ -3,7 +3,7 @@ const path = require(`path`)
 let regionalConfig = process.env.REGION;
 
 if (!regionalConfig) {
-  regionalConfig = 'default';
+  regionalConfig = 'example';
 }
 
 require('dotenv').config({
