@@ -1,57 +1,53 @@
 @import '../assets/shared-styles/colors.module.scss';
+@import '../assets/shared-styles/shared.module.scss';
 
 .blueBackground {
-    background: $blue;
-    color: $off-white;
-}
-
-.choice {
-    font-size: 1.2rem;
-    font-weight: cera-bold;
-    margin-bottom: 0;
-    margin-top: 2rem;
-}
-
-.information {
-    margin-bottom: 0;
-    margin-top: 1rem;
-}
-
-.link {
-    color: $blue;
-    margin-bottom: 0;
-    text-decoration: none;
-}
-
-.quote {
-    margin: 2rem 0 0;
-    padding: 2.5em 1em 1em;
-    text-align: center;
-}
-
-.signature {
-    font-size: 0.68rem;
-    font-style: italic;
-    margin-left: 10rem;
-}
-
-.statCaption {
-    margin: 1em;
-}
-
-.statement {
-    margin-bottom: 0;
-}
-
-.statPercentage {
-    font-size: 4rem;
-    margin-top: 2rem;
+  background: $blue;
+  color: $off-white;
 }
 
 .tealBackground {
-    background: $teal;
+  background: $teal;
 }
 
-.visitSite {
-  margin-bottom: 0;
+.quote {
+  margin: 2rem 0 0;
+  padding: 2.5em 1em 1em;
+  text-align: center;
+
+  .signature {
+    font-size: 1rem;
+    font-style: italic;
+    margin-left: 10rem;
+  }
+
+  .statement {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+  }
+}
+
+.statistic {
+  @extend .contentWrapper;
+
+  h1 {
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+  p {
+    margin: 1em;
+  }
+}
+
+
+.outboundaction {
+  margin: 1rem auto 1rem;
+
+  a {
+    display: block;
+
+    button {
+      margin-top: 1rem;
+    }
+  }
 }

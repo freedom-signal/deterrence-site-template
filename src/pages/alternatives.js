@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import Layout from '../components/layout'
 import PrimaryButton from '../components/PrimaryButton'
@@ -17,9 +18,9 @@ export default ({ data }) => (
         fluid={data.alternativesImage.childImageSharp.fluid}
       />
 
-      <div className={sharedStyles.contentWrapper}>
-        <h1 className={styles.statPercentage}>49%</h1>
-        <p className={styles.statCaption}>
+      <div className={styles.statistic}>
+        <h1>49%</h1>
+        <p>
           of sex buyers have never told anyone they bought sex
         </p>
       </div>
@@ -28,12 +29,12 @@ export default ({ data }) => (
         <p className={styles.statement}>
           "It's such a relief to be out of that life cycle."
         </p>
-        <p className={styles.signature}>-former sex buyer</p>
+        <p className={styles.signature}>- former sex buyer</p>
       </div>
 
-      <div className={sharedStyles.contentWrapper}>
-        <h1 className={styles.statPercentage}>64%</h1>
-        <p className={styles.statCaption}>
+      <div className={styles.statistic}>
+        <h1>64%</h1>
+        <p>
           of sex buyers in the United States said they want to stop
         </p>
       </div>
@@ -43,29 +44,32 @@ export default ({ data }) => (
           "I learned that the harms of prostitution go much deeper than what
           appears on the surface."
         </p>
-        <p className={styles.signature}>-fomer sex buyer</p>
+        <p className={styles.signature}>- fomer sex buyer</p>
       </div>
 
       <div className={sharedStyles.contentWrapper}>
-        <p className={styles.choice}>Make the choice without regret...</p>
-        <p className={styles.contactUs}>contact us today.</p>
+        <p className={styles.outboundaction}>
+          Make the choice without regret...
+          <br />
+          learn about alternatives today.
+          <OutboundLink href={data.site.siteMetadata.alternatives_url} target="_blank">
+            <PrimaryButton>Learn More</PrimaryButton>
+          </OutboundLink>
+        </p>
 
-        <PrimaryButton url={data.site.siteMetadata.alternatives_url}>
-          Learn More
-        </PrimaryButton>
+        <p className={styles.outboundaction}>
+          For more information,
+          <OutboundLink href="tel: { data.site.siteMetadata.alternatives_phone }" target="_blank">
+            Click to Call
+          </OutboundLink>
+        </p>
 
-        <p className={styles.information}>For more information, </p>
-        <a
-          href="tel: { data.site.siteMetadata.alternatives_phone }"
-          className={styles.link}
-        >
-          Click to Call
-        </a>
-        <p className={styles.visitSite}>or visit the following website:</p>
-        <a href={data.site.siteMetadata.alternatives_url} className={styles.link}>
-          {' '}
-          {data.site.siteMetadata.alternatives_website}
-        </a>
+        <p className={styles.outboundaction}>
+          or visit the following website:
+          <OutboundLink href={data.site.siteMetadata.alternatives_url} target="_blank">
+            {data.site.siteMetadata.alternatives_website}
+          </OutboundLink>
+        </p>
       </div>
 
       <div className={classNames(styles.quote, styles.blueBackground)}>
@@ -73,7 +77,7 @@ export default ({ data }) => (
           "Prostitution hurts everyone that's involved, but we can do something
           to stop it."
         </p>
-        <p className={styles.signature}>-former sex buyer</p>
+        <p className={styles.signature}>- former sex buyer</p>
       </div>
     </div>
   </Layout>
