@@ -47,5 +47,11 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets/images`)
       }
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: process.env.PIXEL_CODE,
+      },
+    },
   ]
 };
