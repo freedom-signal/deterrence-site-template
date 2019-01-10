@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import Layout from '../components/layout'
 
@@ -16,17 +17,15 @@ export default ({ data }) => (
       />
 
       <div className={styles.content}>
-        <h3>
-          Are you willing to risk the consequences of buying sex?
-        </h3>
+        <h3>Are you willing to risk the consequences of buying sex?</h3>
 
         <div className={sharedStyles.dividerLine} />
-        
+
         <p>
           You might end up on the {data.site.siteMetadata.sex_offender_registry}
         </p>
       </div>
-        
+
       <Img
         alt="Text overlay that reads: I can't go to my kid's birthday because I'm a registered sex offender. Background image of a child blowing out some candles."
         fluid={data.childImage.childImageSharp.fluid}
@@ -45,41 +44,42 @@ export default ({ data }) => (
       />
       <div className={styles.content}>
         <p>
-          You might pay up to {data.site.siteMetadata.fine} in fines, but you could lose much more than that
+          You might pay up to {data.site.siteMetadata.fine} in fines, but you
+          could lose much more than that
         </p>
       </div>
-        
+
       <Img
         alt="Text overlay that reads: I used to be my daughter's favorite, now she won't even look at me. Background image of a mother consoling her crying daughter."
         fluid={data.daughterImage.childImageSharp.fluid}
       />
 
       <div className={styles.content}>
-        <p>
-          You could become a liability to your company and lose your job
-        </p>
+        <p>You could become a liability to your company and lose your job</p>
       </div>
-        
+
       <Img
         alt="Text overlay that reads: They said someone in h.r. saw my mugshot on the news. Background image of a man sitting at the bar."
         fluid={data.newsImage.childImageSharp.fluid}
       />
 
       <div className={styles.content}>
-        <p>
-          Ready to rethink buying sex? There is help available for you now.
-        </p>
-        
+        <p>Ready to rethink buying sex? There is help available for you now.</p>
+
         <a href="/alternatives" className={styles.arrowIcon}>
           <Img
             alt="Image of an ellipse circle with an arrow within it"
             fluid={data.arrowImage.childImageSharp.fluid}
           />
         </a>
-        
-        <a href={data.site.siteMetadata.law_link} className={styles.readLaws}>
+
+        <OutboundLink
+          href={data.site.siteMetadata.law_link}
+          className={styles.readLaws}
+          target="_blank"
+        >
           read the laws here
-        </a>
+        </OutboundLink>
       </div>
     </div>
   </Layout>
@@ -98,21 +98,21 @@ export const query = graphql`
 
     arrestedImage: file(relativePath: { eq: "consequences1-arrested.png" }) {
       ...fluidImage
-    }  
+    }
     childImage: file(relativePath: { eq: "consequences2-sex-offender.png" }) {
       ...fluidImage
-    } 
+    }
     jailImage: file(relativePath: { eq: "consequences3-jail.png" }) {
       ...fluidImage
-    } 
+    }
     daughterImage: file(relativePath: { eq: "consequences4-daughter.png" }) {
       ...fluidImage
-    } 
+    }
     newsImage: file(relativePath: { eq: "consequences5-on-the-news.png" }) {
       ...fluidImage
-    }   
+    }
     arrowImage: file(relativePath: { eq: "arrow.png" }) {
       ...fluidImage
-    }   
+    }
   }
 `
