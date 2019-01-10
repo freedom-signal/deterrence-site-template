@@ -3,8 +3,7 @@ import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import alternativesIcon from '../assets/images/alternatives-icon.png'
-import consequencesIcon from '../assets/images/consequences-icon.png'
+import PrimaryButton from '../components/PrimaryButton'
 
 import styles from './harm.module.scss'
 import sharedStyles from '../assets/shared-styles/shared.module.scss'
@@ -81,15 +80,14 @@ export default ({ data }) => (
           </p>
         </div>
 
-        <div className={styles.iconCard}>
-          <a href="/consequences">
-            <img src={consequencesIcon} alt="An icon of handcuffs" />
-            <h2>Consequences</h2>
-          </a>
-          <a href="/alternatives">
-            <img src={alternativesIcon} alt="An icon of the Alt key" />
-            <h2>Alternatives</h2>
-          </a>
+        <div className={styles.actionButtons}>
+          <div className={styles.consequences}>
+            <PrimaryButton href="/consequences">Consequences</PrimaryButton>
+          </div>
+
+          <div className={styles.alternatives}>
+            <PrimaryButton href="/alternatives">Alternatives</PrimaryButton>
+          </div>
         </div>
       </div>
     </div>

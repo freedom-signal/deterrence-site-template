@@ -2,8 +2,22 @@ import React from 'react'
 
 import styles from './index.module.scss'
 
-const PrimaryButton = ({ children }) => (
-  <button className={styles.primaryButton}>{children}</button>
-)
+export default class PrimaryButton extends React.Component {
+  constructor(props) {
+    super(props)
+    this.label = props.children
+    this.handleClick = this.handleClick.bind(this)
+  }
 
-export default PrimaryButton
+  handleClick() {
+    fbq('trackCustom', 'Button Follow', { label: this.label })
+  }
+
+  render() {
+    return (
+      <button className={styles.primaryButton} onClick={this.handleClick}>
+        {this.label}
+      </button>
+    )
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import PrimaryButton from '../components/PrimaryButton'
 
 import styles from './index.module.scss'
 import sharedStyles from '../assets/shared-styles/shared.module.scss'
@@ -28,7 +29,7 @@ export default ({ data }) => (
           <a href="/harm">
             <img src={harmIcon} alt="An icon of a medical bag" />
 
-            <h2 className={styles.cardTitle}>Harm</h2>
+            <PrimaryButton href="/alternatives">The Harms</PrimaryButton>
             <p className={styles.cardDescription}>
               Beatings, rapes and murder are a reality of prostitution.
             </p>
@@ -39,7 +40,7 @@ export default ({ data }) => (
           <a href="/consequences">
             <img src={consequencesIcon} alt="An icon of handcuffs" />
 
-            <h2 className={styles.cardTitle}>Consequences</h2>
+            <PrimaryButton href="/consequences">Consequences</PrimaryButton>
             <p className={styles.cardDescription}>
               Police are arresting men who buy sex.
             </p>
@@ -50,7 +51,7 @@ export default ({ data }) => (
           <a href="/alternatives">
             <img src={alternativesIcon} alt="An icon of the Alt key" />
 
-            <h2 className={styles.cardTitle}>Alternatives</h2>
+            <PrimaryButton href="/alternatives">Alternatives</PrimaryButton>
             <p className={styles.cardDescription}>
               Make the choice without regret.
             </p>
@@ -61,7 +62,7 @@ export default ({ data }) => (
           <a href="/request-help">
             <img src={contactIcon} alt="An icon of an envelope" />
 
-            <h2 className={styles.cardTitle}>Request Help</h2>
+            <PrimaryButton href="/alternatives">Request Help</PrimaryButton>
             <p className={styles.cardDescription}>
               Get help from men who understand this experience.
             </p>
