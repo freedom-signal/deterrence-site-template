@@ -10,7 +10,7 @@ export default class PrimaryButton extends React.Component {
   }
 
   handleClick() {
-    fbq('trackCustom', 'Button Follow', { label: this.label })
+    // fbq('trackCustom', 'Button Follow', { label: this.label })
   }
 
   render() {

@@ -24,7 +24,7 @@ export default class GetHelpForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    fbq('track', 'Contact');
+    // fbq('track', 'Contact');
     fetch(this.props.webhook, {
       method: 'POST',
       body: JSON.stringify(this.state),
