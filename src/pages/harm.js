@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import classNames from 'classnames'
 
 import Layout from '../components/layout'
 import PrimaryButton from '../components/PrimaryButton'
@@ -26,30 +27,39 @@ export default ({ data }) => (
       </div>
 
       <div className={sharedStyles.dividerLine} />
-      {/* Prostitution and Trafficking in Nine Countries (Farley et al., 2003)
-       */}
-      <div className={styles.statDiv}>
-        <h1 className={styles.statPercentage}>89%</h1>
+      {/* Prostitution and Trafficking in Nine Countries (Farley, 2003) */}
+
+      <div className={styles.statContainer}>
+        <h1 className={styles.highlightUnderline}><span>89%</span></h1>
         <p className={styles.statCaption}>
-          of those in prostitution want to leave "the life"
+          of those in prostitution{' '}
+          <span className={styles.highlight}> want to leave "the life"</span>
         </p>
       </div>
 
       <div className={sharedStyles.dividerLine} />
 
-      <div className={styles.statDiv}>
+      <div className={styles.statContainer}>
+        <p className={styles.statCaption}>
+          Percentage of women who report being
+          <span className={styles.highlight}>
+            physically assaulted:
+          </span>
+        </p>
         <h1 className={styles.statPercentage}>73%</h1>
-        <p className={styles.statCaption}>
-          of women report being physically assaulted
-        </p>
       </div>
 
       <div className={sharedStyles.dividerLine} />
 
-      <div className={styles.statDiv}>
-        <h1 className={styles.statPercentage}>13</h1>
-        <p className={styles.toWord}>to</p>
-        <h1 className={styles.statPercentage}>15</h1>
+      <div className={classNames(styles.statContainer, styles.ageRange)}>
+        <h1 className={styles.highlightUnderline}>
+          <span>13
+            <span className={styles.mini}>to</span>
+          15</span>
+        </h1>
+        <h1 className={styles.secondaryHeader}>
+        <span className={styles.mini}>years old</span>
+        </h1>
 
         <p className={styles.statCaption}>
           The typical age of entry into prostitution
@@ -64,24 +74,16 @@ export default ({ data }) => (
     />
 
     <div className={sharedStyles.contentWrapper}>
-
-      <div className={styles.statDiv}>
-        <h1 className={styles.statPercentage}>75%</h1>
-        <p className={styles.statCaption}>report having no safe place to go</p>
-      </div>
-
-      <div className={sharedStyles.dividerLine} />
-
-      <div className={styles.statDiv}>
-        <h1 className={styles.statPercentage}>36%</h1>
+    <div className={styles.statContainer}>
+        <h1 className={styles.highlightUnderline}>75%</h1>
         <p className={styles.statCaption}>
-          of prostituted people reported that their buyers were abusive or
-          violent
+        report having 
+          <span className={styles.highlight}>no safe place to go</span>
         </p>
       </div>
 
       <div className={sharedStyles.dividerLine} />
-     
+
       <div>
         <p className={styles.finalStatement}>
           Prostitution also impacts those who buy sex. Want to learn more?

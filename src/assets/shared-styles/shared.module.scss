@@ -3,7 +3,7 @@
 .dividerLine {
   border: 0.5px solid $medium-grey;
   height: 0px;
-  margin: 1.45rem auto;
+  margin: 1.75rem auto;
   width: 150px;
 }
 
@@ -16,6 +16,34 @@
 a {
   color: $blue;
   text-decoration: none;
+}
+
+.highlight {
+  margin-top: .5em;
+  position: relative;
+  display: inline-block;
+  background-color: $yellow;
+  transform: scale(1.25) rotate(-2deg) skew(-20deg);
+  z-index: -1;
+}
+
+.highlightUnderline {
+  position: relative;
+  text-decoration: none;
+  color: rgb(21, 21, 21);
+
+  &::before {
+    content: "";
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 20px;
+    width: 90%;
+    height: 25px;
+    background-color: $yellow;
+    z-index: -1;
+    transform: rotate(-2deg) skew(-20deg);
+  }
 }
 
 @mixin visuallyHidden {
