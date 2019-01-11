@@ -27,15 +27,21 @@
   }
 }
 
-.statistic {
+.statContainer {
   @extend .contentWrapper;
 
   h1 {
-    font-size: 4rem;
     margin-top: 2rem;
-  }
-  p {
-    margin: 1em;
+    font-size: 4rem;
+    text-shadow: 2px 3px 3px $teal;
+    vertical-align: text-bottom;
+
+    &.highlightUnderline::before {
+      left: 21%;
+      width: 55%;
+      bottom: 20px;
+      height: 25px;
+    }    
   }
 }
 
@@ -52,3 +58,15 @@
     }
   }
 }
+
+.highlightUnderline {
+  font-family: Cera-bold;
+  
+  &:before {
+    left: -5%;
+    bottom: 4px;
+    width: 110%;
+    height: 8px;
+  }
+}
+

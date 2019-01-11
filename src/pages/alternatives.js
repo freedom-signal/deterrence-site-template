@@ -17,26 +17,39 @@ export default ({ data }) => (
       fluid={data.alternativesImage.childImageSharp.fluid}
     />
 
-    <div className={styles.statistic}>
+    <div className={styles.statContainer}>
       {/* demand abolition 2017 stat */}
-      <h1>76%</h1>
-      <p>of anonymous sex buyers in the United States said they want to stop</p>
+      <h1 className={styles.highlightUnderline}>
+        <span>76%</span>
+      </h1>
+      <p className={styles.statCaption}>
+        of anonymous sex buyers in the United States said they{' '}
+        <span className={styles.highlightUnderline}>want to stop</span>
+      </p>
     </div>
     <div className={classNames(styles.quote, styles.tealBackground)}>
-    {/* OPS SSE Evaluation Quote */}
+      {/* OPS SSE Evaluation Quote */}
       <p className={styles.statement}>
         "It's such a relief to be out of that life cycle."
       </p>
       <p className={styles.signature}>- fomer sex buyer</p>
     </div>
 
-    <div className={styles.statistic}>
-      <h1>49%</h1>
-      <p>of sex buyers have never told anyone they bought sex</p>
+    <div className={styles.statContainer}>
+      <h1 className={styles.highlightUnderline}>
+        <span>49%</span>
+      </h1>
+      <p className={styles.statCaption}>
+        of sex buyers have <br />
+        <span className={styles.highlightUnderline}>
+          never told anyone
+        </span>{' '}
+        they bought sex
+      </p>
     </div>
 
     <div className={classNames(styles.quote, styles.blueBackground)}>
-    {/* 2018 SSE Evaluation Quote */}
+      {/* 2018 SSE Evaluation Quote */}
       <p className={styles.statement}>
         "I am more aware of how my feelings impact my actions and the
         consequences are negative and not ultimately fulfilling participating in
@@ -80,7 +93,7 @@ export default ({ data }) => (
     </div>
 
     <div className={classNames(styles.quote, styles.blueBackground)}>
-    {/* OPS SSE Evaluation Quote */}
+      {/* OPS SSE Evaluation Quote */}
       <p className={styles.statement}>
         "Prostitution hurts everyone that's involved, but we can do something to
         stop it."
