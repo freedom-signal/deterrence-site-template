@@ -1,19 +1,20 @@
 @import '../assets/shared-styles/colors.module.scss';
 @import '../assets/shared-styles/shared.module.scss';
 
-.blueBackground {
-  background: $blue;
-  color: $off-white;
-}
 
-.tealBackground {
-  background: $teal;
-}
+
 
 .quote {
   margin: 4rem 0;
-  padding: 2em 1em .5em;
+  padding: 2em 1em 0.5em;
   text-align: center;
+  background: $blue;
+  color: $off-white;
+  
+  &.tealBackground {
+    background: $teal;
+    color: $dark-grey;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
@@ -27,7 +28,7 @@
 
   .statement {
     font-size: 1.25rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -45,21 +46,30 @@
       width: 55%;
       bottom: 20px;
       height: 25px;
-    }    
+    }
   }
 }
 
-
 .outboundaction {
   margin: 1rem auto 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
-  a {
+  &:first-of-type {
+    font-size: 1.75rem;
+  }
+  a, button {
     display: block;
+  }
 
-    button {
-      margin-top: 1rem;
-    }
+  button {
+    background-color: $teal;
+    color: $dark-grey;
+    margin: 2rem auto;
+    margin-bottom: 3rem !important;
+  }
+
+  .highlightUnderline {
+    color: $blue;
   }
 }
 
@@ -73,4 +83,3 @@
     height: 8px;
   }
 }
-

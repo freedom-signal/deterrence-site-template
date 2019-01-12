@@ -48,7 +48,7 @@ export default ({ data }) => (
       </p>
     </div>
 
-    <div className={classNames(styles.quote, styles.blueBackground)}>
+    <div className={styles.quote}>
       {/* 2018 SSE Evaluation Quote */}
       <p className={styles.statement}>
         "I am more aware of how my feelings impact my actions and the
@@ -60,15 +60,8 @@ export default ({ data }) => (
 
     <div className={sharedStyles.contentWrapper}>
       <p className={styles.outboundaction}>
-        Make the choice without regret...
-        <br />
-        learn about alternatives today.
-        <OutboundLink
-          href={data.site.siteMetadata.alternatives_url}
-          target="_blank"
-        >
-          <PrimaryButton>Learn More</PrimaryButton>
-        </OutboundLink>
+        Make the choice without regret... learn about alternatives today.
+          <PrimaryButton href="/request-help">Request Help</PrimaryButton>
       </p>
 
       <p className={styles.outboundaction}>
@@ -77,7 +70,7 @@ export default ({ data }) => (
           href="tel: { data.site.siteMetadata.alternatives_phone }"
           target="_blank"
         >
-          Click to Call
+          <span className={styles.highlightUnderline}>Click to Call</span>
         </OutboundLink>
       </p>
 
@@ -87,12 +80,12 @@ export default ({ data }) => (
           href={data.site.siteMetadata.alternatives_url}
           target="_blank"
         >
-          {data.site.siteMetadata.alternatives_website}
+         <span className={styles.highlightUnderline}>{data.site.siteMetadata.alternatives_website}</span>
         </OutboundLink>
       </p>
     </div>
 
-    <div className={classNames(styles.quote, styles.blueBackground)}>
+    <div className={styles.quote}>
       {/* OPS SSE Evaluation Quote */}
       <p className={styles.statement}>
         "Prostitution hurts everyone that's involved, but we can do something to
