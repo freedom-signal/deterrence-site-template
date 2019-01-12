@@ -11,9 +11,13 @@
 }
 
 .quote {
-  margin: 2rem 0 0;
-  padding: 2.5em 1em 1em;
+  margin: 4rem 0;
+  padding: 2em 1em .5em;
   text-align: center;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   .signature {
     font-size: 1rem;
@@ -61,7 +65,7 @@
 
 .highlightUnderline {
   font-family: Cera-bold;
-  
+
   &:before {
     left: -5%;
     bottom: 4px;
