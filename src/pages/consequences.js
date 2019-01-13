@@ -6,7 +6,6 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Layout from '../components/layout'
 
 import styles from './consequences.module.scss'
-import sharedStyles from '../assets/shared-styles/shared.module.scss'
 
 export default ({ data }) => (
   <Layout>

@@ -29,7 +29,7 @@ export default ({ data }) => (
           <a href="/harm">
             <img src={harmIcon} alt="An icon of a medical bag" />
 
-            <PrimaryButton href="/alternatives">The Harms</PrimaryButton>
+            <PrimaryButton href="/alternatives" label="Home -> Harms">The Harms</PrimaryButton>
             <p className={styles.cardDescription}>
               Beatings, rapes and murder are a reality of prostitution.
             </p>
@@ -40,7 +40,7 @@ export default ({ data }) => (
           <a href="/consequences">
             <img src={consequencesIcon} alt="An icon of handcuffs" />
 
-            <PrimaryButton href="/consequences">Consequences</PrimaryButton>
+            <PrimaryButton href="/consequences" label="Home -> Consequences">Consequences</PrimaryButton>
             <p className={styles.cardDescription}>
               Police are arresting men who buy sex.
             </p>
@@ -51,7 +51,7 @@ export default ({ data }) => (
           <a href="/alternatives">
             <img src={alternativesIcon} alt="An icon of the Alt key" />
 
-            <PrimaryButton href="/alternatives">Alternatives</PrimaryButton>
+            <PrimaryButton href="/alternatives" label="Home -> Alternatives">Alternatives</PrimaryButton>
             <p className={styles.cardDescription}>
               Make the choice without regret.
             </p>
@@ -62,7 +62,7 @@ export default ({ data }) => (
           <a href="/request-help">
             <img src={contactIcon} alt="An icon of an envelope" />
 
-            <PrimaryButton href="/alternatives">Request Help</PrimaryButton>
+            <PrimaryButton href="/request-help" label="Home -> Request Help">Request Help</PrimaryButton>
             <p className={styles.cardDescription}>
               Get help from men who understand this experience.
             </p>

@@ -61,7 +61,7 @@ export default ({ data }) => (
     <div className={sharedStyles.contentWrapper}>
       <p className={styles.outboundaction}>
         Make the choice without regret... learn about alternatives today.
-          <PrimaryButton href="/request-help">Request Help</PrimaryButton>
+          <PrimaryButton href="/request-help" label="Alternatives -> Request Help">Request Help</PrimaryButton>
       </p>
 
       <p className={styles.outboundaction}>

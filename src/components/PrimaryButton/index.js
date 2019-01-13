@@ -6,11 +6,15 @@ export default class PrimaryButton extends React.Component {
   constructor(props) {
     super(props)
     this.label = props.children
+    this.href = props.href
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
     // fbq('trackCustom', 'Button Follow', { label: this.label })
+    if (this.href !== undefined) {
+      window.location.href = this.href
+    }
   }
 
   render() {
