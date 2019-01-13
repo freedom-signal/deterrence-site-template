@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import GetHelpForm from '../components/GetHelpForm'
 
 import sharedStyles from '../assets/shared-styles/shared.module.scss'
- 
+
 export default ({ data }) => (
   <Layout>
     <div>

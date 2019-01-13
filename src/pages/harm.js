@@ -30,7 +30,9 @@ export default ({ data }) => (
       {/* Prostitution and Trafficking in Nine Countries (Farley, 2003) */}
 
       <div className={styles.statContainer}>
-        <h1 className={styles.highlightUnderline}><span>89%</span></h1>
+        <h1 className={styles.highlightUnderline}>
+          <span>89%</span>
+        </h1>
         <p className={styles.statCaption}>
           of those in prostitution{' '}
           <span className={styles.highlight}> want to leave "the life"</span>
@@ -42,9 +44,7 @@ export default ({ data }) => (
       <div className={styles.statContainer}>
         <p className={styles.statCaption}>
           Percentage of women who report being
-          <span className={styles.highlight}>
-            physically assaulted:
-          </span>
+          <span className={styles.highlight}>physically assaulted:</span>
         </p>
         <h1 className={styles.statPercentage}>73%</h1>
       </div>
@@ -53,12 +53,14 @@ export default ({ data }) => (
 
       <div className={classNames(styles.statContainer, styles.ageRange)}>
         <h1 className={styles.highlightUnderline}>
-          <span>13
+          <span>
+            13
             <span className={styles.mini}>to</span>
-          15</span>
+            15
+          </span>
         </h1>
         <h1 className={styles.secondaryHeader}>
-        <span className={styles.mini}>years old</span>
+          <span className={styles.mini}>years old</span>
         </h1>
 
         <p className={styles.statCaption}>
@@ -74,10 +76,10 @@ export default ({ data }) => (
     />
 
     <div className={sharedStyles.contentWrapper}>
-    <div className={styles.statContainer}>
+      <div className={styles.statContainer}>
         <h1 className={styles.highlightUnderline}>75%</h1>
         <p className={styles.statCaption}>
-        report having 
+          report having
           <span className={styles.highlight}>no safe place to go</span>
         </p>
       </div>

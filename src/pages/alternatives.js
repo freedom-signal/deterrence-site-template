@@ -61,7 +61,12 @@ export default ({ data }) => (
     <div className={sharedStyles.contentWrapper}>
       <p className={styles.outboundaction}>
         Make the choice without regret... learn about alternatives today.
-          <PrimaryButton href="/request-help" label="Alternatives -> Request Help">Request Help</PrimaryButton>
+        <PrimaryButton
+          href="/request-help"
+          label="Alternatives -> Request Help"
+        >
+          Request Help
+        </PrimaryButton>
       </p>
 
       <p className={styles.outboundaction}>
@@ -80,7 +85,9 @@ export default ({ data }) => (
           href={data.site.siteMetadata.alternatives_url}
           target="_blank"
         >
-         <span className={styles.highlightUnderline}>{data.site.siteMetadata.alternatives_website}</span>
+          <span className={styles.highlightUnderline}>
+            {data.site.siteMetadata.alternatives_website}
+          </span>
         </OutboundLink>
       </p>
     </div>

@@ -21,7 +21,10 @@ export default ({ data }) => (
         <div className={styles.dividerLine} />
 
         <p>
-          You might end up on the <br /><span className={styles.highlightUnderline}>Sex Offender Registry</span>
+          You might end up on the <br />
+          <span className={styles.highlightUnderline}>
+            Sex Offender Registry
+          </span>
         </p>
       </div>
 
@@ -32,8 +35,10 @@ export default ({ data }) => (
 
       <div className={styles.content}>
         <p>
-          Get arrested and you could <span className={styles.highlightUnderline}>spend up to{' '}
-          {data.site.siteMetadata.jail_time} in jail</span>
+          Get arrested and you could{' '}
+          <span className={styles.highlightUnderline}>
+            spend up to {data.site.siteMetadata.jail_time} in jail
+          </span>
         </p>
       </div>
 
@@ -43,8 +48,11 @@ export default ({ data }) => (
       />
       <div className={styles.content}>
         <p>
-          You might pay up to <br/><span className={styles.highlightUnderline}>{data.site.siteMetadata.fine} in fines</span>,<br/> but you
-          could lose much more than that
+          You might pay up to <br />
+          <span className={styles.highlightUnderline}>
+            {data.site.siteMetadata.fine} in fines
+          </span>
+          ,<br /> but you could lose much more than that
         </p>
       </div>
 
@@ -54,7 +62,10 @@ export default ({ data }) => (
       />
 
       <div className={styles.content}>
-        <p>You could become a liability to your company and <span className={styles.highlightUnderline}>lose your job</span></p>
+        <p>
+          You could become a liability to your company and
+          <span className={styles.highlightUnderline}>lose your job</span>
+        </p>
       </div>
 
       <Img
@@ -63,7 +74,10 @@ export default ({ data }) => (
       />
 
       <div className={styles.content}>
-        <p>Ready to rethink buying sex? There is help for you <br/><span className={styles.highlightUnderline}> available now.</span></p>
+        <p>
+          Ready to rethink buying sex? There is help for you <br />
+          <span className={styles.highlightUnderline}> available now.</span>
+        </p>
 
         <a href="/alternatives" className={styles.arrowIcon}>
           <Img
