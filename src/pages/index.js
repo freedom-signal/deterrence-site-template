@@ -16,7 +16,7 @@ export default ({ data }) => (
   <Layout>
     <div className={styles.pageContainer}>
       <div className={styles.intro}>
-        <h1 className={styles.pageTitle}>{data.site.siteMetadata.title}</h1>
+        <h1 className={styles.highlightUnderline}><span>{data.site.siteMetadata.title}</span></h1>
         <p className={styles.tagline}>It's not as harmless as you think.</p>
         <div className={sharedStyles.dividerLine} />
         <p className={styles.siteDescription}>

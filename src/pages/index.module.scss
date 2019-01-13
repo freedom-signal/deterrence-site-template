@@ -1,4 +1,5 @@
 @import '../assets/shared-styles/colors.module.scss';
+@import '../assets/shared-styles/shared.module.scss';
 
 /* Whole page layout */
 .pageContainer {
@@ -9,10 +10,8 @@
   grid-template-columns: 1fr 5fr 1fr;
 
 }
-/* overall layout differs across screen sizes */
 
 /* mobile and tablet - vertical icons column */
-
 @media only screen  and (max-width : 1224px) {
   .pageContainer {
     grid-template-rows: 1fr;
@@ -20,7 +19,6 @@
 }
 
 /* desktop - horizontal icons row */
-
 @media only screen  and (min-width : 1224px) {
   .pageContainer {
     grid-template-rows: 1fr 2fr;
@@ -29,17 +27,47 @@
 
 .pageContainer .intro {
   grid-area: intro;
+  margin-top: 3rem;
+
+  h1.highlightUnderline:before {
+    left: 12%;
+    bottom: 7px;
+    width: 75%;
+  }
+
+  .tagline {
+    font-family:  Cera-Bold;
+  }
+
+  @media only screen and (min-width: 665px) and (max-width: 999px) {
+    h1.highlightUnderline:before {
+      left: 20%;
+      bottom: 7px;
+      width: 60%;
+    }
+  }
+
+  @media only screen and (min-width : 999px) {
+    p {
+      max-width: 50%;
+      margin: auto;
+    }
+
+    h1.highlightUnderline:before {
+      left: 35%;
+      bottom: 7px;
+      width: 30%;
+    }
+  }
 }
 
 /* icons area layout differs across screen sizes */
-
 .iconsArea {
   display: flex;
   grid-area: iconsContainer;
 }
 
 /* mobile and tablet - vertical */
-
 @media only screen  and (max-width : 1224px) {
   .iconsArea {
     flex-direction: column;
@@ -49,7 +77,6 @@
 }
 
 /* desktop - horizontal */
-
 @media only screen  and (min-width : 1224px) {
   .iconsArea {
     flex-direction: row;
@@ -58,8 +85,6 @@
   }
 }
 
-/* Cards (icon + description) look the same across screen sizes */
-
 .iconCard {
   display: flex;
   flex-direction: column;
@@ -67,35 +92,19 @@
   align-items: center;
   flex-basis: 20%;
   max-width: 450px;
-}
 
-/* COME BACK TO THIS */
-/* need to make it so icon doesn't become much bigger than description*/
-/* at intermediate screen sizes */
+  a {
+    flex-basis: 40%;
+    text-decoration: none;
+    color: $dark-grey;
+  }
 
-.iconCard a {
-  flex-basis: 40%;
-  text-decoration: none;
-  color: $dark-grey;
-}
+  img {
+    max-height: 35%;
+    max-width: 35%;
+  }
 
-.iconCard img {
-  max-height: 35%;
-  max-width: 35%;
-}
-
-.iconCard h2.cardTitle {
-  margin-bottom: .75rem;
-}
-
-.iconCard p.cardDescription {
-  flex-basis: 40%;
-}
-
-.intro {
-  margin-bottom: 0;
-}
-
-.pageTitle {
-  margin-top: 2rem;
+  p.cardDescription {
+    flex-basis: 40%;
+  }
 }
