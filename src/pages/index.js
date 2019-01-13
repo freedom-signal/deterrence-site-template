@@ -16,9 +16,13 @@ export default ({ data }) => (
   <Layout>
     <div className={styles.pageContainer}>
       <div className={styles.intro}>
-        <h1 className={styles.highlightUnderline}><span>{data.site.siteMetadata.title}</span></h1>
+        <h1 className={styles.highlightUnderline}>
+          <span>{data.site.siteMetadata.title}</span>
+        </h1>
         <p className={styles.tagline}>It's not as harmless as you think.</p>
-        <div className={sharedStyles.dividerLine} />
+
+        <div className={styles.dividerLine} />
+
         <p className={styles.siteDescription}>
           {data.site.siteMetadata.description}
         </p>
@@ -29,43 +33,61 @@ export default ({ data }) => (
           <a href="/harm">
             <img src={harmIcon} alt="An icon of a medical bag" />
 
-            <PrimaryButton href="/alternatives" label="Home -> Harms">The Harms</PrimaryButton>
             <p className={styles.cardDescription}>
               Beatings, rapes and murder are a reality of prostitution.
             </p>
+
+            <PrimaryButton href="/alternatives" label="Home -> Harms">
+              The Harms
+            </PrimaryButton>
           </a>
         </div>
+
+        <div className={styles.dividerLine} />
 
         <div className={styles.iconCard}>
           <a href="/consequences">
             <img src={consequencesIcon} alt="An icon of handcuffs" />
 
-            <PrimaryButton href="/consequences" label="Home -> Consequences">Consequences</PrimaryButton>
             <p className={styles.cardDescription}>
               Police are arresting men who buy sex.
             </p>
+
+            <PrimaryButton href="/consequences" label="Home -> Consequences">
+              Consequences
+            </PrimaryButton>
           </a>
         </div>
+
+        <div className={styles.dividerLine} />
 
         <div className={styles.iconCard}>
           <a href="/alternatives">
             <img src={alternativesIcon} alt="An icon of the Alt key" />
 
-            <PrimaryButton href="/alternatives" label="Home -> Alternatives">Alternatives</PrimaryButton>
             <p className={styles.cardDescription}>
               Make the choice without regret.
             </p>
+
+            <PrimaryButton href="/alternatives" label="Home -> Alternatives">
+              Alternatives
+            </PrimaryButton>
           </a>
         </div>
+
+        <div className={styles.dividerLine} />
 
         <div className={styles.iconCard}>
           <a href="/request-help">
             <img src={contactIcon} alt="An icon of an envelope" />
 
-            <PrimaryButton href="/request-help" label="Home -> Request Help">Request Help</PrimaryButton>
             <p className={styles.cardDescription}>
               Get help from men who understand this experience.
             </p>
+
+            <PrimaryButton href="/request-help" label="Home -> Request Help">
+              Request Help
+            </PrimaryButton>
           </a>
         </div>
       </div>
