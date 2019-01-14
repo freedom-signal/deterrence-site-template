@@ -36,7 +36,7 @@ export default ({ data }) => (
           </p>
         </a>
         <PrimaryButton href="/alternatives" label="Home -> Harms">
-          The Harms ⟶
+          Harms ⟶
         </PrimaryButton>
 
         <div className={styles.dividerLine} />
