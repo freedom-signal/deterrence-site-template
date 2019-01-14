@@ -6,10 +6,10 @@ import PrimaryButton from '../components/PrimaryButton'
 
 import styles from './index.module.scss'
 
-import harmIcon from '../assets/images/harm-icon.png'
-import consequencesIcon from '../assets/images/consequences-icon.png'
-import alternativesIcon from '../assets/images/alternatives-icon.png'
-import contactIcon from '../assets/images/contact-icon.png'
+import harmIcon from '../assets/images/wound.svg'
+import consequencesIcon from '../assets/images/handcuffs.svg'
+import alternativesIcon from '../assets/images/arrows.svg'
+import contactIcon from '../assets/images/helpinghand.svg'
 
 export default ({ data }) => (
   <Layout>
@@ -28,67 +28,55 @@ export default ({ data }) => (
       </div>
 
       <div className={styles.iconsArea}>
-        <div className={styles.iconCard}>
-          <a href="/harm">
-            <img src={harmIcon} alt="An icon of a medical bag" />
+        <a href="/harm" className={styles.iconCard}>
+          <img src={harmIcon} alt="An icon of head with wound" />
 
-            <p className={styles.cardDescription}>
-              Beatings, rapes and murder are a reality of prostitution.
-            </p>
-
-            <PrimaryButton href="/alternatives" label="Home -> Harms">
-              The Harms
-            </PrimaryButton>
-          </a>
-        </div>
+          <p className={styles.cardDescription}>
+            Beatings, rapes and murder are a reality of prostitution.
+          </p>
+        </a>
+        <PrimaryButton href="/alternatives" label="Home -> Harms">
+          The Harms ⟶
+        </PrimaryButton>
 
         <div className={styles.dividerLine} />
 
-        <div className={styles.iconCard}>
-          <a href="/consequences">
-            <img src={consequencesIcon} alt="An icon of handcuffs" />
+        <a href="/consequences" className={styles.iconCard}>
+          <img src={consequencesIcon} alt="An icon of handcuffs" />
 
-            <p className={styles.cardDescription}>
-              Police are arresting men who buy sex.
-            </p>
-
-            <PrimaryButton href="/consequences" label="Home -> Consequences">
-              Consequences
-            </PrimaryButton>
-          </a>
-        </div>
+          <p className={styles.cardDescription}>
+            Police are arresting men who buy sex.
+          </p>
+        </a>
+        <PrimaryButton href="/consequences" label="Home -> Consequences">
+          Consequences ⟶
+        </PrimaryButton>
 
         <div className={styles.dividerLine} />
 
-        <div className={styles.iconCard}>
-          <a href="/alternatives">
-            <img src={alternativesIcon} alt="An icon of the Alt key" />
+        <a href="/alternatives" className={styles.iconCard}>
+          <img src={alternativesIcon} alt="Three divergent arrows" />
 
-            <p className={styles.cardDescription}>
-              Make the choice without regret.
-            </p>
-
-            <PrimaryButton href="/alternatives" label="Home -> Alternatives">
-              Alternatives
-            </PrimaryButton>
-          </a>
-        </div>
+          <p className={styles.cardDescription}>
+            Make the choice without regret.
+          </p>
+        </a>
+        <PrimaryButton href="/alternatives" label="Home -> Alternatives">
+          Alternatives ⟶
+        </PrimaryButton>
 
         <div className={styles.dividerLine} />
 
-        <div className={styles.iconCard}>
-          <a href="/request-help">
-            <img src={contactIcon} alt="An icon of an envelope" />
+        <a href="/request-help" className={styles.iconCard}>
+          <img src={contactIcon} alt="An icon of two hands clasping" />
 
-            <p className={styles.cardDescription}>
-              Get help from men who understand this experience.
-            </p>
-
-            <PrimaryButton href="/request-help" label="Home -> Request Help">
-              Request Help
-            </PrimaryButton>
-          </a>
-        </div>
+          <p className={styles.cardDescription}>
+            Get help from men who understand this experience.
+          </p>
+        </a>
+        <PrimaryButton href="/request-help" label="Home -> Request Help">
+          Request Help ⟶
+        </PrimaryButton>
       </div>
     </div>
   </Layout>

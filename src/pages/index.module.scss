@@ -28,6 +28,7 @@
 .pageContainer .intro {
   grid-area: intro;
   margin-top: 3rem;
+  font-family: Cera-bold;
 
   h1.highlightUnderline:before {
     left: 12%;
@@ -85,38 +86,33 @@
   }
 }
 
-.iconCard {
+a.iconCard {
+  text-decoration: none;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  flex-basis: 20%;
-  max-width: 450px;
-
-  a {
-    flex-basis: 40%;
-    text-decoration: none;
-    color: $dark-grey;
-  }
 
   img {
-    display: block;
-    margin: 0.25rem auto;
-    max-height: 35%;
-    max-width: 35%;
+    max-height: 150px;
+    width: 50%;
+    display: inline-block;
   }
 
-  button {
-    width: 75%;
-    margin: 0 auto 1rem;
+  .cardDescription {
+    color: $dark-grey;
+    width: 50%;
+    display: inline-block;
   }
+}
 
-  p.cardDescription {
-    flex-basis: 40%;
-    margin: 1rem auto;
+button {
+  width: 75%;
+  margin: 1rem auto !important;
+
+  &:last-of-type {
+    margin-bottom: 3rem !important;
   }
 }
 
 .dividerLine {
-  margin: 3.25rem auto;
+  margin: 2.25rem auto;
 }
