@@ -33,7 +33,10 @@ export default ({ data }) => (
             <img src={harmIcon} alt="An icon of head with wound" />
 
             <p className={styles.cardDescription}>
-              Beatings, rapes and murder are a reality of prostitution.
+              Beatings, rapes and murder are a <br />
+              <span className={styles.highlightUnderline}>
+                reality of prostitution.
+              </span>
             </p>
           </a>
           <PrimaryButton href="/alternatives" label="Home -> Harms">
@@ -47,7 +50,10 @@ export default ({ data }) => (
             <img src={consequencesIcon} alt="An icon of handcuffs" />
 
             <p className={styles.cardDescription}>
-              Police are arresting men who buy sex.
+              Police are <br />
+              <span className={styles.highlightUnderline}>arresting men</span>
+              <br />
+              who buy sex.
             </p>
           </a>
           <PrimaryButton href="/consequences" label="Home -> Consequences">
@@ -62,7 +68,8 @@ export default ({ data }) => (
             <img src={alternativesIcon} alt="Three divergent arrows" />
 
             <p className={styles.cardDescription}>
-              Make the choice without regret.
+              Make the choice <br />
+              <span className={styles.highlightUnderline}>without regret.</span>
             </p>
           </a>
           <PrimaryButton href="/alternatives" label="Home -> Alternatives">
@@ -76,7 +83,9 @@ export default ({ data }) => (
             <img src={contactIcon} alt="An icon of two hands clasping" />
 
             <p className={styles.cardDescription}>
-              Get help from men who understand this experience.
+              <span className={styles.highlightUnderline}>Get help</span>
+              <br />
+              from men who understand this experience.
             </p>
           </a>
           <PrimaryButton href="/request-help" label="Home -> Request Help">

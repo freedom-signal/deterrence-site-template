@@ -74,6 +74,13 @@
       margin-left: 1rem;
       width: 50%;
       display: inline-block;
+
+      .highlightUnderline:before {
+        height: 12px;
+        left: -3%;
+        bottom: 2px;
+        width: 105%;
+      }
     }
   }
 
