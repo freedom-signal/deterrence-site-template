@@ -18,7 +18,7 @@ const DesktopMenu = () => (
     </div>
 
     <div className={styles.rightMenu}>
-      <MenuLink label="Harm" url="/harm" />
+      <MenuLink label="Harms" url="/harm" />
       <MenuLink label="Consequences" url="/consequences" />
       <MenuLink label="Alternatives" url="/alternatives" />
       <MenuLink label="Request Help" url="/request-help" />

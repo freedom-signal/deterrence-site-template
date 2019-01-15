@@ -30,11 +30,7 @@ a {
   position: relative;
   text-decoration: none;
   color: rgb(21, 21, 21);
-
-  &:first-child {
-    // Bring content above the underline
-    z-index: 0;
-  }
+  z-index: 0;
 
   &::before {
     content: '';

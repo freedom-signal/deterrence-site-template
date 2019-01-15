@@ -16,7 +16,7 @@ export default ({ data }) => (
     <div className={styles.pageContainer}>
       <div className={styles.intro}>
         <h1 className={styles.highlightUnderline}>
-          <span>{data.site.siteMetadata.title}</span>
+          {data.site.siteMetadata.title}
         </h1>
         <h3 className={styles.tagline}>It's not as harmless as you think.</h3>
 
