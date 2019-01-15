@@ -39,7 +39,7 @@ export default ({ data }) => (
               </span>
             </p>
           </a>
-          <PrimaryButton href="/alternatives" label="Home -> Harms">
+          <PrimaryButton href="/harm" label="Home -> Harms">
             Harms ⟶
           </PrimaryButton>
         </div>
