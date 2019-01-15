@@ -18,7 +18,7 @@ export default ({ data }) => (
         <h1 className={styles.highlightUnderline}>
           <span>{data.site.siteMetadata.title}</span>
         </h1>
-        <p className={styles.tagline}>It's not as harmless as you think.</p>
+        <h3 className={styles.tagline}>It's not as harmless as you think.</h3>
 
         <div className={styles.dividerLine} />
 

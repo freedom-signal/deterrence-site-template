@@ -19,12 +19,11 @@ a {
 }
 
 .highlight {
-  margin-top: .5em;
+  margin-top: 0.5em;
   position: relative;
   display: inline-block;
   background-color: $yellow;
   transform: scale(1.25) rotate(-2deg) skew(-20deg);
-  z-index: -1;
 }
 
 .highlightUnderline {
@@ -32,8 +31,13 @@ a {
   text-decoration: none;
   color: rgb(21, 21, 21);
 
+  &:first-child {
+    // Bring content above the underline
+    z-index: 0;
+  }
+
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0%;
     bottom: 20px;

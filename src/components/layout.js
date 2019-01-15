@@ -19,23 +19,29 @@ export default ({ children }) => (
       }
     `}
     render={data => (
-      <div className={styles.wrapper}>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: 'description',
-              content: data.site.siteMetadata.description,
-            },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        />
+      <div className={styles.outerWrapper}>
+        <div className={styles.wrapper}>
+          <Helmet
+            title={data.site.siteMetadata.title}
+            meta={[
+              {
+                name: 'description',
+                content: data.site.siteMetadata.description,
+              },
+              {
+                name: 'keywords',
+                content:
+                  'escorts, prostitution, hobby guide, stop buying, vice',
+              },
+            ]}
+          />
 
-        <Header />
+          <Header />
 
-        <div className={styles.innerContainer}>{children}</div>
+          <div className={styles.innerContainer}>{children}</div>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
     )}
   />

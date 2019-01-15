@@ -2,7 +2,9 @@
 @import '../../assets/shared-styles/shared.module.scss';
 
 nav.desktopNav {
-  margin: 1.45rem 1.0875rem;
+  font-family: Cera-Light;
+  margin: 1.45rem 0 1rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -10,18 +12,26 @@ nav.desktopNav {
   align-items: baseline;
 }
 
+.rightMenu {
+  float: right;
+}
+
+.leftMenu {
+  font-family: Cera-Bold;
+  font-size: 1.3rem;
+}
+
 .menuLink {
   display: inline-block;
   padding: 0.25rem;
-}
 
-.menuLink a {
-  color: $off-white;
-  text-decoration: none;
-  padding: 0.75rem 0;
-}
+  a {
+    color: $off-white;
+    text-decoration: none;
+    padding: 0.75rem 0;
 
-nav > .menuLink a {
-  font-weight: bold;
-  font-size: 1.3rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -17,14 +17,10 @@ export default ({ data }) => (
     />
 
     <div className={sharedStyles.contentWrapper}>
-      <div>
-        <p className={styles.firstStatement}>
-          Beatings, rapes and murder are a reality of prostitution.
-        </p>
-        <p className={styles.firstStatement}>
-          You don't want to buy into that.
-        </p>
-      </div>
+      <p className={styles.firstStatement}>
+        Beatings, rapes and murder are a reality of prostitution.
+      </p>
+      <p className={styles.firstStatement}>You don't want to buy into that.</p>
 
       <div className={sharedStyles.dividerLine} />
       {/* Prostitution and Trafficking in Nine Countries (Farley, 2003) */}
@@ -46,7 +42,7 @@ export default ({ data }) => (
           Percentage of women who report being
           <span className={styles.highlight}>physically assaulted:</span>
         </p>
-        <h1 className={styles.statPercentage}>73%</h1>
+        <h1 className={styles.alignBottom}>73%</h1>
       </div>
 
       <div className={sharedStyles.dividerLine} />

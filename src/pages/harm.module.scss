@@ -30,12 +30,20 @@
 }
 
 .statContainer {
+  max-width: 325px;
+  margin: auto;
+
   h1 {
     display: inline-block;
     width: 50%;
     font-size: 4rem;
     text-shadow: 2px 3px 3px $teal;
-    vertical-align: text-bottom;
+    vertical-align: top;
+
+    &.alignBottom {
+      vertical-align: sub;
+      padding-left: 1rem;
+    }
   }
 
   .statCaption {
