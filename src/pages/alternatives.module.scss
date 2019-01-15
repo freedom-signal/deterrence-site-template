@@ -1,19 +1,24 @@
 @import '../assets/shared-styles/colors.module.scss';
 @import '../assets/shared-styles/shared.module.scss';
 
-.blueBackground {
-  background: $blue;
-  color: $off-white;
-}
 
-.tealBackground {
-  background: $teal;
-}
+
 
 .quote {
-  margin: 2rem 0 0;
-  padding: 2.5em 1em 1em;
+  margin: 4rem 0;
+  padding: 2em 1em 0.5em;
   text-align: center;
+  background: $blue;
+  color: $off-white;
+  
+  &.tealBackground {
+    background: $teal;
+    color: $dark-grey;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   .signature {
     font-size: 1rem;
@@ -23,31 +28,58 @@
 
   .statement {
     font-size: 1.25rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
-.statistic {
+.statContainer {
   @extend .contentWrapper;
 
   h1 {
-    font-size: 4rem;
     margin-top: 2rem;
-  }
-  p {
-    margin: 1em;
+    font-size: 4rem;
+    text-shadow: 2px 3px 3px $teal;
+    vertical-align: text-bottom;
+
+    &.highlightUnderline::before {
+      left: 21%;
+      width: 55%;
+      bottom: 20px;
+      height: 25px;
+    }
   }
 }
 
-
 .outboundaction {
   margin: 1rem auto 1rem;
+  font-size: 1.25rem;
 
-  a {
+  &:first-of-type {
+    font-size: 1.75rem;
+  }
+  a, button {
     display: block;
+  }
 
-    button {
-      margin-top: 1rem;
-    }
+  button {
+    background-color: $teal;
+    color: $dark-grey;
+    margin: 2rem auto;
+    margin-bottom: 3rem !important;
+  }
+
+  .highlightUnderline {
+    color: $blue;
+  }
+}
+
+.highlightUnderline {
+  font-family: Cera-bold;
+
+  &:before {
+    left: -5%;
+    bottom: 4px;
+    width: 110%;
+    height: 8px;
   }
 }

@@ -6,11 +6,10 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Layout from '../components/layout'
 
 import styles from './consequences.module.scss'
-import sharedStyles from '../assets/shared-styles/shared.module.scss'
 
 export default ({ data }) => (
   <Layout>
-    <div className={sharedStyles.pageWrapper}>
+    <div className={styles.pageWrapper}>
       <Img
         alt="Text overlay that reads: It's not worth ruining your future. Background image of a man in the backseat of a police car."
         fluid={data.arrestedImage.childImageSharp.fluid}
@@ -19,10 +18,13 @@ export default ({ data }) => (
       <div className={styles.content}>
         <h3>Are you willing to risk the consequences of buying sex?</h3>
 
-        <div className={sharedStyles.dividerLine} />
+        <div className={styles.dividerLine} />
 
         <p>
-          You might end up on the {data.site.siteMetadata.sex_offender_registry}
+          You might end up on the <br />
+          <span className={styles.highlightUnderline}>
+            Sex Offender Registry
+          </span>
         </p>
       </div>
 
@@ -33,8 +35,10 @@ export default ({ data }) => (
 
       <div className={styles.content}>
         <p>
-          Get arrested and you could spend up to{' '}
-          {data.site.siteMetadata.jail_time} in jail
+          Get arrested and you could{' '}
+          <span className={styles.highlightUnderline}>
+            spend up to {data.site.siteMetadata.jail_time} in jail
+          </span>
         </p>
       </div>
 
@@ -44,8 +48,11 @@ export default ({ data }) => (
       />
       <div className={styles.content}>
         <p>
-          You might pay up to {data.site.siteMetadata.fine} in fines, but you
-          could lose much more than that
+          You might pay up to <br />
+          <span className={styles.highlightUnderline}>
+            {data.site.siteMetadata.fine} in fines
+          </span>
+          ,<br /> but you could lose much more than that
         </p>
       </div>
 
@@ -55,7 +62,10 @@ export default ({ data }) => (
       />
 
       <div className={styles.content}>
-        <p>You could become a liability to your company and lose your job</p>
+        <p>
+          You could become a liability to your company and
+          <span className={styles.highlightUnderline}>lose your job</span>
+        </p>
       </div>
 
       <Img
@@ -64,7 +74,10 @@ export default ({ data }) => (
       />
 
       <div className={styles.content}>
-        <p>Ready to rethink buying sex? There is help available for you now.</p>
+        <p>
+          Ready to rethink buying sex? There is help for you <br />
+          <span className={styles.highlightUnderline}> available now.</span>
+        </p>
 
         <a href="/alternatives" className={styles.arrowIcon}>
           <Img

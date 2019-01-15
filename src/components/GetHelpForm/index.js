@@ -3,6 +3,7 @@ import React from 'react'
 import PrimaryButton from '../PrimaryButton'
 
 import styles from './index.module.scss'
+import trackWithPixel from '../../utils/trackWithPixel'
 
 export default class GetHelpForm extends React.Component {
   constructor(props) {
@@ -24,7 +25,9 @@ export default class GetHelpForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    fbq('track', 'Contact');
+
+    trackWithPixel('track', 'Contact')
+
     fetch(this.props.webhook, {
       method: 'POST',
       body: JSON.stringify(this.state),

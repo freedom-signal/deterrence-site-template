@@ -1,16 +1,22 @@
 import React from 'react'
 
+import trackWithPixel from '../../utils/trackWithPixel'
+
 import styles from './index.module.scss'
 
 export default class PrimaryButton extends React.Component {
   constructor(props) {
     super(props)
     this.label = props.children
-    this.handleClick = this.handleClick.bind(this)
+    this.href = props.href
   }
 
-  handleClick() {
-    fbq('trackCustom', 'Button Follow', { label: this.label })
+  handleClick = () => {
+    trackWithPixel('trackCustom', 'Button Follow', { label: this.label })
+
+    if (this.href !== undefined) {
+      window.location.href = this.href
+    }
   }
 
   render() {

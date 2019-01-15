@@ -1,4 +1,5 @@
 @import '../assets/shared-styles/colors.module.scss';
+@import '../assets/shared-styles/shared.module.scss';
 
 .finalStatement {
   font-style: italic;
@@ -15,6 +16,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 2em;
 
   button {
     padding: 0.5rem;
@@ -27,23 +29,51 @@
   margin-top: 2em;
 }
 
-.statCaption {
-  margin-right: 4em;
-  margin-left: 4em;
-}
+.statContainer {
+  h1 {
+    display: inline-block;
+    width: 50%;
+    font-size: 4rem;
+    text-shadow: 2px 3px 3px $teal;
+    vertical-align: text-bottom;
+  }
 
-.statDiv {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
+  .statCaption {
+    display: inline-block;
+    width: 50%;
+  }
 
-.statPercentage {
-  font-size: 3rem;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
-}
+  .highlight {
+    font-family: Cera-Bold;
+  }
 
-.toWord {
-  font-size: 1.5rem;
+  &.ageRange {
+    h1 {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5rem;
+
+      .mini {
+        font-size: 1.5rem;
+        padding: 0 0.75rem;
+        vertical-align: middle;
+      }
+    }
+
+    h1.secondaryHeader {
+      font-size: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .highlightUnderline::before {
+      left: 12%;
+      width: 75%;
+      bottom: 20px;
+    }
+
+    .statCaption {
+      display: block;
+      width: 100%;
+    }
+  }
 }

@@ -1,14 +1,14 @@
 const path = require(`path`)
 
-let regionalConfig = process.env.REGION;
+let regionalConfig = process.env.REGION
 
 if (!regionalConfig) {
-  regionalConfig = 'example';
+  regionalConfig = 'example'
 }
 
 require('dotenv').config({
-  path: `regional_config/.env.${regionalConfig}`
-});
+  path: `regional_config/.env.${regionalConfig}`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -21,31 +21,32 @@ module.exports = {
     alternatives_url: process.env.ALTERNATIVES_URL,
     alternatives_phone: process.env.ALTERNATIVES_PHONE,
     law_link: process.env.LAW_LINK,
-    zapier_webhook: process.env.ZAPIER_WEBHOOK
+    zapier_webhook: process.env.ZAPIER_WEBHOOK,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GA_TRACKING_CODE
-      }
+        trackingId: process.env.GA_TRACKING_CODE,
+      },
     },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`
-      }
+        pathToConfigModule: `src/utils/typography.js`,
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    'gatsby-plugin-eslint',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `img`,
-        path: path.join(__dirname, `src`, `assets/images`)
-      }
+        path: path.join(__dirname, `src`, `assets/images`),
+      },
     },
     {
       resolve: `gatsby-plugin-facebook-pixel`,
@@ -53,5 +54,5 @@ module.exports = {
         pixelId: process.env.PIXEL_CODE,
       },
     },
-  ]
-};
+  ],
+}
