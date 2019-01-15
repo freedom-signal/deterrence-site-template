@@ -28,55 +28,61 @@ export default ({ data }) => (
       </div>
 
       <div className={styles.iconsArea}>
-        <a href="/harm" className={styles.iconCard}>
-          <img src={harmIcon} alt="An icon of head with wound" />
+        <div className={styles.iconCard}>
+          <a href="/harm">
+            <img src={harmIcon} alt="An icon of head with wound" />
 
-          <p className={styles.cardDescription}>
-            Beatings, rapes and murder are a reality of prostitution.
-          </p>
-        </a>
-        <PrimaryButton href="/alternatives" label="Home -> Harms">
-          Harms ⟶
-        </PrimaryButton>
+            <p className={styles.cardDescription}>
+              Beatings, rapes and murder are a reality of prostitution.
+            </p>
+          </a>
+          <PrimaryButton href="/alternatives" label="Home -> Harms">
+            Harms ⟶
+          </PrimaryButton>
+        </div>
+        <div className={styles.dividerLine} />
+
+        <div className={styles.iconCard}>
+          <a href="/consequences">
+            <img src={consequencesIcon} alt="An icon of handcuffs" />
+
+            <p className={styles.cardDescription}>
+              Police are arresting men who buy sex.
+            </p>
+          </a>
+          <PrimaryButton href="/consequences" label="Home -> Consequences">
+            Consequences ⟶
+          </PrimaryButton>
+        </div>
 
         <div className={styles.dividerLine} />
 
-        <a href="/consequences" className={styles.iconCard}>
-          <img src={consequencesIcon} alt="An icon of handcuffs" />
+        <div className={styles.iconCard}>
+          <a href="/alternatives">
+            <img src={alternativesIcon} alt="Three divergent arrows" />
 
-          <p className={styles.cardDescription}>
-            Police are arresting men who buy sex.
-          </p>
-        </a>
-        <PrimaryButton href="/consequences" label="Home -> Consequences">
-          Consequences ⟶
-        </PrimaryButton>
-
-        <div className={styles.dividerLine} />
-
-        <a href="/alternatives" className={styles.iconCard}>
-          <img src={alternativesIcon} alt="Three divergent arrows" />
-
-          <p className={styles.cardDescription}>
-            Make the choice without regret.
-          </p>
-        </a>
-        <PrimaryButton href="/alternatives" label="Home -> Alternatives">
-          Alternatives ⟶
-        </PrimaryButton>
+            <p className={styles.cardDescription}>
+              Make the choice without regret.
+            </p>
+          </a>
+          <PrimaryButton href="/alternatives" label="Home -> Alternatives">
+            Alternatives ⟶
+          </PrimaryButton>
+        </div>
 
         <div className={styles.dividerLine} />
+        <div className={styles.iconCard}>
+          <a href="/request-help">
+            <img src={contactIcon} alt="An icon of two hands clasping" />
 
-        <a href="/request-help" className={styles.iconCard}>
-          <img src={contactIcon} alt="An icon of two hands clasping" />
-
-          <p className={styles.cardDescription}>
-            Get help from men who understand this experience.
-          </p>
-        </a>
-        <PrimaryButton href="/request-help" label="Home -> Request Help">
-          Request Help ⟶
-        </PrimaryButton>
+            <p className={styles.cardDescription}>
+              Get help from men who understand this experience.
+            </p>
+          </a>
+          <PrimaryButton href="/request-help" label="Home -> Request Help">
+            Request Help ⟶
+          </PrimaryButton>
+        </div>
       </div>
     </div>
   </Layout>

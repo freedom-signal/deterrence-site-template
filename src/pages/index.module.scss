@@ -86,31 +86,33 @@
   }
 }
 
-a.iconCard {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
+.iconCard {
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 
-  img {
-    max-height: 150px;
-    width: 50%;
-    display: inline-block;
+    img {
+      max-height: 150px;
+      width: 50%;
+      display: inline-block;
+    }
+
+    .cardDescription {
+      color: $dark-grey;
+      margin-left: 1rem;
+      width: 50%;
+      display: inline-block;
+    }
   }
 
-  .cardDescription {
-    color: $dark-grey;
-    margin-left: 1rem;
-    width: 50%;
-    display: inline-block;
-  }
-}
+  button {
+    width: 75%;
+    margin: 1rem auto !important;
 
-button {
-  width: 75%;
-  margin: 1rem auto !important;
-
-  &:last-of-type {
-    margin-bottom: 3rem !important;
+    &:last-of-type {
+      margin-bottom: 3rem !important;
+    }
   }
 }
 
