@@ -40,4 +40,20 @@
     margin-right: 0.5rem;
     margin-top: 0.05rem;
   }
+
+  h4.confirmation {
+    height: 30px;
+    margin-bottom: 4.35rem;
+  }
+
+  button {
+    margin-bottom: 3rem;
+  }
+
+  .inactive {
+    button {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
 }

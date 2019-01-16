@@ -10,6 +10,7 @@ export default class GetHelpForm extends React.Component {
     super(props)
     this.state = {
       email: '',
+      emailSent: false,
     }
   }
 
@@ -30,7 +31,11 @@ export default class GetHelpForm extends React.Component {
 
     fetch(this.props.webhook, {
       method: 'POST',
-      body: JSON.stringify(this.state),
+      body: JSON.stringify(this.state.email),
+    })
+
+    this.setState({
+      emailSent: true,
     })
   }
 
@@ -50,10 +55,31 @@ export default class GetHelpForm extends React.Component {
               value={this.state.email}
             />
           </div>
-
-          <PrimaryButton type="submit">Request Confidential Help</PrimaryButton>
+          <FormButton
+            emailSent={this.state.emailSent}
+            emailEntered={this.state.email}
+          />
         </form>
       </div>
     )
   }
+}
+
+function FormButton(props) {
+  if (props.emailSent === true) {
+    return <ConfirmationButton />
+  }
+  return <SendEmailButton emailEntered={props.emailEntered} />
+}
+
+function ConfirmationButton(props) {
+  return <h4 className={styles.confirmation}>✅ Email sent.</h4>
+}
+
+function SendEmailButton(props) {
+  return (
+    <div className={props.emailEntered ? 'active' : styles.inactive}>
+      <PrimaryButton type="submit">Request Confidential Help</PrimaryButton>
+    </div>
+  )
 }
