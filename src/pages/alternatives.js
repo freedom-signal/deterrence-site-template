@@ -72,7 +72,7 @@ export default ({ data }) => (
       <p className={styles.outboundaction}>
         For more information,
         <OutboundLink
-          href="tel: { data.site.siteMetadata.alternatives_phone }"
+          href={'tel:' + data.site.siteMetadata.alternatives_phone}
           target="_blank"
         >
           <span className={styles.highlightUnderline}>Click to Call</span>

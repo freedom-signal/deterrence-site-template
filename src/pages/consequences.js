@@ -35,9 +35,10 @@ export default ({ data }) => (
 
       <div className={styles.content}>
         <p>
-          Get arrested and you could{' '}
+          Get arrested and you could <br />
           <span className={styles.highlightUnderline}>
-            spend up to {data.site.siteMetadata.jail_time} in jail
+            spend up to <br />
+            {data.site.siteMetadata.jail_time} in jail
           </span>
         </p>
       </div>
@@ -64,6 +65,7 @@ export default ({ data }) => (
       <div className={styles.content}>
         <p>
           You could become a liability to your company and
+          <br />
           <span className={styles.highlightUnderline}>lose your job</span>
         </p>
       </div>
