@@ -21,6 +21,7 @@ module.exports = {
     alternatives_url: process.env.ALTERNATIVES_URL,
     alternatives_phone: process.env.ALTERNATIVES_PHONE,
     law_link: process.env.LAW_LINK,
+    law_link_secondary: process.env.LAW_LINK_SECONDARY,
     zapier_webhook: process.env.ZAPIER_WEBHOOK,
   },
   plugins: [

@@ -93,7 +93,15 @@ export default ({ data }) => (
           className={styles.readLaws}
           target="_blank"
         >
-          read the laws here
+          Click here to read the laws about prostitution
+        </OutboundLink>
+
+        <OutboundLink
+          href={data.site.siteMetadata.law_link_secondary}
+          className={styles.readLaws}
+          target="_blank"
+        >
+          Click here to read the Safe Harbor law
         </OutboundLink>
       </div>
     </div>
@@ -108,6 +116,7 @@ export const query = graphql`
         fine
         sex_offender_registry
         law_link
+        law_link_secondary
       }
     }
 
