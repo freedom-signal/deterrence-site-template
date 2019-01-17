@@ -75,7 +75,10 @@ export default ({ data }) => (
           href={'tel:' + data.site.siteMetadata.alternatives_phone}
           target="_blank"
         >
-          <span className={styles.highlightUnderline}>Click to Call</span>
+          Click to call the <br />
+          <span className={styles.highlightUnderline}>
+            {data.site.siteMetadata.alternatives_phone_label}
+          </span>
         </OutboundLink>
       </p>
 
@@ -110,6 +113,7 @@ export const query = graphql`
         alternatives_website
         alternatives_url
         alternatives_phone
+        alternatives_phone_label
       }
     }
 
