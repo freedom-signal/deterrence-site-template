@@ -1,10 +1,11 @@
 @import '../../assets/shared-styles/colors.module.scss';
 
 .footer {
-  background-color: $dark-grey;
-  padding: .75rem .5rem .5rem
-}
+  padding: 0.75rem 1rem 0.5rem;
+  min-height: 90px;
 
-.copyright {
-  color: $light-grey;
+  img {
+    height: 100%;
+    margin-bottom: 0;
+  }
 }
