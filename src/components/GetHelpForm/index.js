@@ -28,10 +28,11 @@ export default class GetHelpForm extends React.Component {
     event.preventDefault()
 
     trackWithPixel('track', 'Contact')
+    this.state.date = new Date()
 
     fetch(this.props.webhook, {
       method: 'POST',
-      body: JSON.stringify(this.state.email),
+      body: JSON.stringify(this.state),
     })
 
     this.setState({
