@@ -7,3 +7,7 @@ yarn-error.log
 # Build directory
 /public
 .vscode/
+
+# Ignore all regional config files except example
+regional_config/.env.*
+!regional_config/.env.example
