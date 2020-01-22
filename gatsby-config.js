@@ -1,13 +1,7 @@
 const path = require(`path`)
 
-let regionalConfig = process.env.REGION
-
-if (!regionalConfig) {
-  regionalConfig = 'example'
-}
-
 require('dotenv').config({
-  path: `regional_config/.env.${regionalConfig}`,
+  path: `.env`,
 })
 
 module.exports = {
